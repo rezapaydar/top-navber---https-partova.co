@@ -1,0 +1,18 @@
+@font-face{
+    font-family: iransans;
+    src: url(../fonts/Iranian\ Sans.ttf);
+}
+
+
+.navbar.navbar-expand-sm{
+    font-family: iransans;
+    padding:0.5rem 3rem;
+     background:#da1539;
+     direction: rtl;
+}
+div.collapse a{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+
+}
