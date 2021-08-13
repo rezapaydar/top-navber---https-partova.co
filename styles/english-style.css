@@ -1,0 +1,184 @@
+@font-face{
+    font-family: iransansbold;
+    src: url(../fonts/IRANSansWeb\(FaNum\)\ Bold.otf);
+}
+@font-face{
+    font-family: iransansnormal;
+    src: url(../fonts/IRANSansWeb\(FaNum\)\ Bold.otf);
+}
+body{
+    background: #f2f2f2;
+}
+button,p,span,title,label{
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: iransansnormal;
+  }
+
+  h1,h2,h3,h4,h5,h6,a{
+    font-family: iransansbold;
+    font-weight: 600;
+
+  }
+
+  li, ul{
+    font-family: iransansnormal;
+    font-weight: normal;
+
+  }
+
+#navbar_main{
+    font-family: iransans;
+    padding:0.5rem 1.75rem;
+     background:#da1539;
+     direction: ltr;
+}
+
+#navone{
+    font-family: iransans;
+    padding:0.1rem 3rem;
+     background:rgb(50,50,50);
+     direction: ltr;
+     color: white;
+
+}
+
+.nav-item a{
+    font-size: 0.75rem;
+    font-weight: 600;
+
+}
+
+div.collapse a:hover{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+
+}
+
+div.collapse a:active{
+    color: white;
+    text-decoration: white;
+}
+
+#navone a.nav-link , #navone span{
+    font-size: 0.75rem;
+    color: white;
+    cursor: pointer;
+
+}
+#navone span{
+    line-height: 30px;
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+.fa-angle-left{
+    position: relative;
+    top: 4px;
+}
+
+.tab-content button,.tab-content p,.tab-content h1,.tab-content h2,.tab-content h3,.tab-content h4,.tab-content h5,.tab-content h6,.tab-content span,.tab-content title,.tab-content label,.tab-content li,.tab-content ul {
+    color:rgb(95, 77, 73);
+}
+
+
+.navbar .megamenu{ padding: 1rem; }
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+	
+}	
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+		overflow-y: auto;
+	    max-height: 90vh;
+	    margin-top:10px;
+	}
+}
+
+body.offcanvas-active{
+	overflow:hidden;
+}
+
+.offcanvas-header{ display:none; }
+
+.screen-darken{
+	height: 100%;
+	width:0%;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity:0;
+	visibility:hidden;
+	background-color: rgba(34, 34, 34, 0.6);
+	transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active{
+	z-index:10; 
+	transition:opacity .3s ease, width 0s;
+    opacity:1;
+    width:100%;
+    visibility:visible;
+}
+
+/* ============ mobile view ============ */
+@media all and (max-width: 991px) {
+	
+	.offcanvas-header{ display:block; }
+
+	.mobile-offcanvas{
+		visibility: hidden;
+		transform:translateX(-100%);
+	    border-radius:0; 
+		display:block;
+	    position: fixed;
+	    top: 0; left:0;
+	    height: 100%;
+	    z-index: 1200;
+	    width:80%;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+	}
+
+	.mobile-offcanvas.show{
+		visibility: visible;
+    	transform: translateX(0);
+	}
+	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+		display: block;
+	}
+
+}
+/* #products li{
+    padding-left: 10px;
+} */
