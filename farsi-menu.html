@@ -14,6 +14,13 @@
 
 <link
 rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+crossorigin="anonymous"
+/>
+
+<link
+rel="stylesheet"
 href="path/to/font-awesome/css/font-awesome.min.css"
 />
 <link
@@ -81,9 +88,9 @@ referrerpolicy="no-referrer"
 		  <ul class="navbar-nav">
 			<li class="nav-item active"> <a class="nav-link" href="#">درباره ما </a> </li>
 			<li class="nav-item"><a class="nav-link" href="#"> پروژه ها </a></li>
-			<li class="nav-item"> 
+			<li class="nav-item" id="services"> 
 			  <a class="nav-link dropdown-toggle" id="toggledrop" href="#" data-bs-toggle="dropdown">حوزه های فعالیت</a>
-			  <div class="dropdown-menu megamenu" id="megamenu" role="menu" >
+			  <div class="dropdown-menu megamenu p-0" id="megamenu" role="menu" >
 				  <div class="row g-3">
   
 					<!--شروع دکمه تب های انتخاب کننده -->
@@ -92,7 +99,7 @@ referrerpolicy="no-referrer"
   
 						  <ul class="nav flex-column nav-item " id="myTab" role="tablist">
 							<li class="nav-item w-100" role="presentation">
-							  <button class="nav-link active py-3 w-100 d-flex justify-content-between " style="padding: 0 54px;background:rgb(75, 61, 58);border:none;outline: none;color: white;" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><span>نمای شفاف ساختمانی</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+							  <button class="nav-link  py-3 w-100 d-flex justify-content-between " style="padding: 0 54px;background:rgb(75, 61, 58);border:none;outline: none;color: white;" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><span>نمای شفاف ساختمانی</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 							</li>
 							<li class="nav-item w-100" role="presentation">
 							  <button class="nav-link w-100 py-3 d-flex justify-content-between"  style="padding: 0 54px;background:rgb(95, 77, 73);border:none;outline: none;color: white;" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><span>پله های ساختمانی</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
@@ -115,53 +122,53 @@ referrerpolicy="no-referrer"
 					<div id="tabpane-selected-menu" class="row col-12 col-lg-8 py-4">
 					  <div class="tab-content">
   
-						<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab">
   
-						  <div class="row d-flex flex-row justify-content-between pt-4">
+						  <div class="row d-flex flex-row justify-content-between pt-4" style="padding-right: 3rem;">
   
 							<!--  پیشنهاد -->
-							<div class="row col-12 col-lg-6 p-2" style="display: flex;flex-direction: row-reverse;">
+							<div class="row col-12 col-lg-6 p-2 mb-4" style="display: flex;flex-direction: row-reverse;">
   
-							  <div class="col-12 col-lg-4">
-								<img src="img/1.jpg" alt="" class="w-100 h-75">
+							  <div class="col-12 col-lg-4 p-2 " id="suggest">
+								<img src="img/1.jpg" alt="" class="w-100 h-75 d-none d-lg-block">
 							  </div>
 							  <div class="col-12 col-lg-8 text-right ">
 								<h5>پله های فلان</h5>
 								<ul class="text-black list-unstyled">
-								  <li><a href="#">پله 1 </a></li>
-								  <li><a href="#">پله 2</a></li>
-								  <li><a href="#">پله 3</a></li>
-								  <li><a href="#">پله 4</a></li>
+								  <li id="products"><a href="#">پله 1 </a></li>
+								  <li id="products"><a href="#">پله 2</a></li>
+								  <li id="products"><a href="#">پله 3</a></li>
+								  <li id="products"><a href="#">پله 4</a></li>
 								</ul>
 							  </div>
 							</div>
   
-							<div class="row col-12 col-lg-6 p-2" style="display: flex;flex-direction: row-reverse;">
+							<div class="row col-12 col-lg-6 p-2 mb-4" id="suggest" style="display: flex;flex-direction: row-reverse;">
 							  <div class="col-12 col-lg-4">
-								<img src="img/1.jpg" alt="" class="w-100 h-75">
+								<img src="img/1.jpg" alt="" class="w-100 h-75 d-none d-lg-block">
 							  </div>
 							  <div class="col-12 col-lg-8 ">
 								<h5>پله های فلان</h5>
 								<ul class="text-black list-unstyled">
-								  <li><a href="#">پله 1 </a></li>
-								  <li><a href="#">پله 2</a></li>
-								  <li><a href="#">پله 3</a></li>
-								  <li><a href="#">پله 4</a></li>
+								  <li id="products"><a href="#">پله 1 </a></li>
+								  <li id="products"><a href="#">پله 2</a></li>
+								  <li id="products"><a href="#">پله 3</a></li>
+								  <li id="products"><a href="#">پله 4</a></li>
 								</ul>
 							  </div>
 							</div>
   
-							<div class="row col-12 col-lg-6 p-2" style="display: flex;flex-direction: row-reverse;">
+							<div class="row col-12 col-lg-6 p-2 mb-4" id="suggest" style="display: flex;flex-direction: row-reverse;">
 							  <div class="col-12 col-lg-4">
-								<img src="img/1.jpg" alt="" class="w-100 h-75">
+								<img src="img/1.jpg" alt="" class="w-100 h-75 d-none d-lg-block">
 							  </div>
 							  <div class="col-12 col-lg-8 ">
 								<h5>پله های فلان</h5>
 								<ul class="text-black list-unstyled">
-								  <li><a href="#">پله 1 </a></li>
-								  <li><a href="#">پله 2</a></li>
-								  <li><a href="#">پله 3</a></li>
-								  <li><a href="#">پله 4</a></li>
+								  <li id="products"><a href="#">پله 1 </a></li>
+								  <li id="products"><a href="#">پله 2</a></li>
+								  <li id="products"><a href="#">پله 3</a></li>
+								  <li id="products"><a href="#">پله 4</a></li>
 								</ul>
 							  </div>
 							</div>
@@ -175,7 +182,7 @@ referrerpolicy="no-referrer"
 						  
 							<div class="row d-flex flex-row-reverse justify-content-between pt-4">
 
-
+2
 								<!-- قرار دادن پیشنهادات -->
 	
 	
@@ -187,7 +194,7 @@ referrerpolicy="no-referrer"
 
 							<div class="row d-flex flex-row-reverse justify-content-between pt-4">
 
-
+3
 								<!-- قرار دادن پیشنهادات -->
 	
 	
@@ -199,7 +206,7 @@ referrerpolicy="no-referrer"
   
 							<div class="row d-flex flex-row-reverse justify-content-between pt-4">
 
-
+4
 								<!-- قرار دادن پیشنهادات -->
 	
 	
@@ -235,12 +242,12 @@ referrerpolicy="no-referrer"
 
 </div>
 </body>
-<script src="scripts/script.js"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
+<script
+    src="scripts/jquery-git.min.js"
+    
   ></script>
+<script src="scripts/script.js"></script>
+  
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

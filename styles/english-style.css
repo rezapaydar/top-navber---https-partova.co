@@ -178,7 +178,105 @@ body.offcanvas-active{
 		display: block;
 	}
 
+    #products{
+    
+        padding:5px 0 5px 10px ;
+        border: 1px solid rgb(143, 142, 142);
+        border-radius: 1px;
+        background: linear-gradient(145deg, #ffffff, #dddddd);
+        box-shadow:  5px 5px 10px #d0d0d0,
+                     -5px -5px 10px #ffffff;
+        transition: 0.3s;
+    }
+    #products a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #products:active{
+        
+        border: 1px solid rgb(143, 142, 142);
+        border-radius: 1px;
+        border-radius: 1px;
+    background: #f5f5f5;
+    box-shadow: inset 5px 5px 10px #f1f1f1,
+                inset -5px -5px 10px #ffffff;
+    }
+
 }
-/* #products li{
+#products{
+    
+    transition: 0.3s;
+}
+#suggest > img{
+opacity: .1;
+transition: 0.2;
+}
+
+#suggest:hover #suggest > img{
+    opacity: 1;
+}
+#myTab> li> button{
+transition: 0.3s;
+}
+
+#myTab> li> button#home-tab:active{
+    border-radius: 0px;
+    background: #4b3d3a;
+    box-shadow: inset 12px 12px 24px #403431,
+                inset -12px -12px 24px #564643;
+}
+
+#myTab> li> button#profile-tab:active{
+    border-radius: 0px;
+    background: #5f4d49;
+    box-shadow: inset 17px 17px 34px #51413e,
+                inset -17px -17px 34px #6d5954;
+}
+
+#myTab> li> button#messages-tab:active{
+    border-radius: 0px;
+    background: #947873;
+    box-shadow: inset 12px 12px 24px #7e6662,
+                inset -12px -12px 24px #aa8a84;
+}
+
+#myTab> li> button#settings-tab:active{
+    border-radius: 0px;
+    background: #b1918b;
+    box-shadow: inset 12px 12px 24px #967b76,
+                inset -12px -12px 24px #cca7a0;
+}
+
+#myTab> li> button#home-tab:hover{
+    border-radius: 0px;
+    background: #4b3d3a;
+    box-shadow: inset 12px 12px 24px #403431,
+                inset -12px -12px 24px #564643;
+}
+
+#myTab> li> button#profile-tab:hover{
+    border-radius: 0px;
+    background: #5f4d49;
+    box-shadow: inset 17px 17px 34px #51413e,
+                inset -17px -17px 34px #6d5954;
+}
+
+#myTab> li> button#messages-tab:hover{
+    border-radius: 0px;
+    background: #947873;
+    box-shadow: inset 12px 12px 24px #7e6662,
+                inset -12px -12px 24px #aa8a84;
+}
+
+#myTab> li> button#settings-tab:hover{
+    border-radius: 0px;
+    background: #b1918b;
+    box-shadow: inset 12px 12px 24px #967b76,
+                inset -12px -12px 24px #cca7a0;
+}
+#products a{
     padding-left: 10px;
-} */
+    text-decoration: none;
+    color: #403431;
+}

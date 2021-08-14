@@ -55,3 +55,42 @@ document.addEventListener("DOMContentLoaded", function(){
     });
     
 }); 
+
+let toggledrop = document.getElementById('toggledrop');
+let megamenu = document.getElementById('megamenu');
+
+$(document).ready(function(){
+
+    $("#services").hover(function(){
+
+        $(toggledrop).dropdown('toggle')
+    
+    })
+-
+    $("#services").mouseleave(function () { 
+        $(toggledrop).dropdown('toggle')
+    });
+
+    $("#services").click(function(){
+
+        $(toggledrop).dropdown('toggle')
+    
+    })
+
+    
+
+    
+
+})
+
+$(document).ready(function(){
+
+
+    $('.nav-link').mouseenter(function(){
+        $(this).tab('show');
+    })
+
+    
+
+})
+
