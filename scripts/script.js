@@ -58,39 +58,74 @@ document.addEventListener("DOMContentLoaded", function(){
 
 let toggledrop = document.getElementById('toggledrop');
 let megamenu = document.getElementById('megamenu');
+let navlink=document.querySelectorAll('.nav-link');
 
-$(document).ready(function(){
+// toggledrop.addEventListener('mouseenter',()=>{
 
-    $("#services").hover(function(){
+//     $(toggledrop).dropdown('toggle')
+//     $(`${toggledrop} i`).css('transform','rotate(90deg)')
 
-        $(toggledrop).dropdown('toggle')
+
+
+// })
+
+// toggledrop.addEventListener('mouseleave',()=>{
+
+//     $(toggledrop).dropdown('toggle')
+//     $(toggledrop).css('transform','rotate(0deg)')
+
+
+// })
+
+
+
+
+// $(document).ready(function(){
+
+//     $("#services").hover(function(){
+
+//         $(toggledrop).dropdown('toggle')
     
-    })
--
-    $("#services").mouseleave(function () { 
-        $(toggledrop).dropdown('toggle')
-    });
+//     })
+// -
+//     $("#services").mouseleave(function () { 
+//         $(toggledrop).dropdown('toggle')
+//     });
 
-    $("#services").click(function(){
+//     $("#services").click(function(){
 
-        $(toggledrop).dropdown('toggle')
+//         $(toggledrop).dropdown('toggle')
     
-    })
-
-    
+//     })
 
     
 
-})
+    
 
-$(document).ready(function(){
+// })
+
+// $(document).ready(function(){
 
 
-    $('.nav-link').mouseenter(function(){
-        $(this).tab('show');
-    })
+//     $('.nav-link').mouseenter(function(){
+//         $(this).tab('show');
+//     })
 
     
 
-})
+// })
 
+// var acc = document.getElementsByClassName("accordion");
+// var i;
+
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }

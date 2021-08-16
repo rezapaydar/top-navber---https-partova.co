@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 @font-face{
     font-family: iransansbold;
     src: url(../fonts/IRANSansWeb\(FaNum\)\ Bold.otf);
@@ -179,18 +184,16 @@ body.offcanvas-active{
 	}
 
     #products{
-    
+        margin: 3px;
         padding:5px 0 5px 10px ;
-        border: 1px solid rgb(143, 142, 142);
-        border-radius: 1px;
-        background: linear-gradient(145deg, #ffffff, #dddddd);
-        box-shadow:  5px 5px 10px #d0d0d0,
-                     -5px -5px 10px #ffffff;
         transition: 0.3s;
     }
+
+
+
     #products a{
         text-decoration: none;
-        color: black;
+        color: rgb(75, 61, 58);
     }
     
     #products:active{
@@ -279,4 +282,53 @@ transition: 0.3s;
     padding-left: 10px;
     text-decoration: none;
     color: #403431;
+}
+.suggest img{
+opacity: 0;
+transition:0.5s;
+}
+
+.suggest:hover img{
+    opacity: 1;
+}
+
+#g3{
+    background:white;
+}
+
+@media all and (max-width:800px) {
+    #g3{
+        background:#da1539;
+    }
+
+    .suggest img{
+        opacity: 1;
+        transition:0.5s;
+        }
+        
+        
+}
+
+.accordion-button{
+    font-size: 0.75rem;
+
+
+}
+
+.accordion-button::after{
+    padding: 10px;
+    width: 5px;
+    height: 5px;
+    display: block;
+    margin-right: .255em;
+    vertical-align: .255em;
+    content: "";
+
+}
+.card-header{
+    background: white;
+}
+
+.card-header a{
+    color: black;
 }

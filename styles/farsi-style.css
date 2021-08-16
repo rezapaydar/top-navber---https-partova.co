@@ -30,8 +30,8 @@ button,p,span,title,label{
 #navbar_main{
     font-family: iransans;
     padding:0.5rem 1.75rem;
-     background:#da1539;
-     direction: rtl;
+    background:#da1539;
+    direction: rtl;
 }
 
 #navone{
@@ -181,11 +181,6 @@ body.offcanvas-active{
     #products{
     
         padding:5px 5px 0 10px ;
-        border: 1px solid rgb(143, 142, 142);
-        border-radius: 1px;
-        background: linear-gradient(145deg, #ffffff, #dddddd);
-        box-shadow:  5px 5px 10px #d0d0d0,
-                     -5px -5px 10px #ffffff;
         transition: 0.3s;
     }
     #products a{
@@ -203,7 +198,10 @@ body.offcanvas-active{
                 inset -5px -5px 10px #ffffff;
     }
 
+
+
 }
+
 
 #products{
     
@@ -251,3 +249,62 @@ transition: 0.3s;
     text-decoration: none;
     color: #403431;
 }
+
+.suggest img{
+    opacity: 0;
+    transition:0.5s;
+    }
+    
+    .suggest:hover img{
+        opacity: 1;
+    }
+
+    .suggest img{
+        opacity: 0;
+        transition:0.5s;
+        }
+        
+        .suggest:hover img{
+            opacity: 1;
+        }
+        
+        #g3{
+            background:white;
+        }
+        
+        @media all and (max-width:800px) {
+            #g3{
+                background:#da1539;
+            }
+        
+            .suggest img{
+                opacity: 1;
+                transition:0.5s;
+                }
+                
+                
+        }
+        
+        .accordion-button{
+            font-size: 0.75rem;
+        
+        
+        }
+        
+        .accordion-button::after{
+            padding: 10px;
+            width: 5px;
+            height: 5px;
+            display: block;
+            margin-right: 70%;
+            vertical-align: .255em;
+            content: "";
+        
+        }
+        .card-header{
+            background: white;
+        }
+        
+        .card-header a{
+            color: black;
+        }
