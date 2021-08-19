@@ -52,30 +52,40 @@ referrerpolicy="no-referrer"
 
 	<div class="top-menu navbar" id="navone">
 
-		
+<div id="contnav" class="d-flex justify-content-between justify-content-md-between  w-100 ro">
 
-		<ul class="navbar-nav languages d-flex flex-row-reverse">
-			<li class="mx-3">
-				<a class="nav-link" href="http://farsi-languages">
-					تماس
-				  <i class="fas fa-headset" style="color: white; font-size: 15px"></i>
-				</a>
-			  </li>
+  <ul class="navbar-nav  languages d-flex flex-row-reverse justify-content-start" >
+		<li class="mx-1 mx-sm-3">
+		  <a class="nav-link" href="http://farsi-languages">
+			  تماس
+			<i class="fas fa-headset" style="color: white; font-size: 15px"></i>
+		  </a>
+		</li>
 		  <li class="nav-item p-0 m-0">
-			<a class="nav-link" href="http://farsi-languages">FA</a>
+			  <a class="nav-link" href="http://farsi-languages">FA</a>
 		  </li>
 		  <span>|</span>
 		  <li class="nav-item p-0 m-0">
-			<a class="nav-link" href="http://farsi-languages">EN</a>
+			  <a class="nav-link" href="http://farsi-languages">EN</a>
 		  </li>
 		  <span>|</span>
 		  <li class="nav-item p-0 m-0">
-			<a class="nav-link" href="http://farsi-languages">AR</a>
+			  <a class="nav-link" href="http://farsi-languages">AR</a>
+			  <!-- <button data-trigger="navbar_main" class="d-lg-none btn " type="button"> <i class="fas fa-bars"></i> </button>	 -->
 		  </li>
-  
-		 
-		</ul>
-		<button data-trigger="navbar_main" class="d-lg-none btn btn-warning" type="button"> <i class="fas fa-bars"></i> </button>
+		  <li class="nav-item p-0 m-0">
+			  <!-- <a class="nav-link" href="http://farsi-languages">AR</a> -->
+			  <button data-trigger="navbar_main" class="d-lg-none btn " type="button"> <i class="fas fa-bars text-white"></i> </button>	
+		  </li>		 
+  </ul>
+  <div class="logo-cont col-5 col-sm-4 col-lg-3 d-flex justify-content-start py-3 p-0 " >
+	  <img src="./img/Logo_White.png" class="w-100 ">
+  </div>
+
+</div>		
+
+
+		
   
 	</div>
 
@@ -88,7 +98,7 @@ referrerpolicy="no-referrer"
 		   </div>
 		   
 	   
-		  <ul class="navbar-nav">
+		  <ul class="navbar-nav" id="navbar-main">
 			<li class="nav-item"> <a class="nav-link" href="#">درباره ما </a> </li>
 			<li class="nav-item"><a class="nav-link" href="#"> پروژه ها </a></li>
 			<li class="nav-item" id="services"> 
@@ -242,154 +252,161 @@ referrerpolicy="no-referrer"
 						</div>
 
 					<!-- محتوای سایز موبایل -->
-						<div class="accordion py-4 d-block d-md-none" id="accordionExample">
+					<div class="accordion py-4 d-block d-md-none" id="accordionExample">
+  
+  
+						<div class="accordion-item">
+						<p class="accordion-header" id="headingOne">
+							<button class=" py-3 w-100 d-flex justify-content-between " style="padding: 0 20px;border:none;outline: none;color: white;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							نمای شفاف ساختمانی
+							</button>
+						</p>
 
 
-							<div class="accordion-item">
-							<p class="accordion-header" id="headingOne">
-								<button class=" py-3 w-100 d-flex justify-content-between accordion-button" style="padding: 0 20px;background:rgb(75, 61, 58);border:none;outline: none;color: white;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								نمای شفاف ساختمانی
-								</button>
-							</p>
-							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-								<div class="accordion-body d-flex justify-content-center flex-column p-0" style="overflow: scroll;">
+						<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body d-flex justify-content-center flex-column p-0" style="overflow: scroll;">
 
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: left;" >
+								<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: left;" >
 
 
+									<div class="card row d-flex flex-column">
 										
-
-										<div class="card row d-flex flex-column">
-											
-											<div class="row col-12">
-												<div class="col-12">
-													<p>
-														<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOneA">پله های اول </button>
-													</p>
-												</div>
-
-												<div class="row bg-light">
-
-													<div class="col-5 col-lg-4" id="collapseOneA">
-														<img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block">
-													</div>
-			
-													<div class="card-body col-7 col-lg-8 hide p-0" id="collapseOneA">
-														<ul class="text-black list-unstyled">
-														<li id="products"><a href="#" >پله 1 </a></li>
-														<li id="products"><a href="#" >پله 2</a></li>
-														<li id="products"><a href="#" >پله 3</a></li>
-														<li id="products"><a href="#" >پله 4</a></li>
-														</ul>
-													</div>
-
-												</div>
+										<div class="row col-12 accordion-item">
+											<div class="col-12">
+												<p class="accordion-header">
+													<button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapseOneA">پله های اول </button>
+												</p>
 											</div>
 
-											<div class="row col-12">
-												<div class="col-12">
-													<p>
-														<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapsetwoA">پله های اول </button>
-													</p>
+											<div class="row">
+
+												<div class="col-4 col-lg-4 d-none d-sm-block" id="collapseOneA">
+													<img src="img/1.jpg" alt="" class="w-100 h-75 ">
+												</div>
+		
+												<div class="card-body col-8 col-lg-8 hide" id="collapseOneA">
+													<ul class="text-black list-unstyled">
+													<li id="products"><a href="#" >پله 1 </a></li>
+													<li id="products"><a href="#" >پله 2</a></li>
+													<li id="products"><a href="#" >پله 3</a></li>
+													<li id="products"><a href="#" >پله 4</a></li>
+													</ul>
 												</div>
 
-												<div class="row">
-
-													<div class="col-4 col-lg-4" id="collapsetwoA">
-														<img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block">
-													</div>
-			
-													<div class="card-body col-8 col-lg-8 hide" id="collapsetwoA">
-														<ul class="text-black list-unstyled">
-														<li id="products"><a href="#" >پله 1 </a></li>
-														<li id="products"><a href="#" >پله 2</a></li>
-														<li id="products"><a href="#" >پله 3</a></li>
-														<li id="products"><a href="#" >پله 4</a></li>
-														</ul>
-													</div>
-
-												</div>
 											</div>
-
-											<div class="row col-12">
-												<div class="col-12">
-													<p>
-														<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapsethreeA">پله های اول </button>
-													</p>
-												</div>
-
-												<div class="row">
-
-													<div class="col-4 col-lg-4" id="collapsethreeA">
-														<img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block">
-													</div>
-			
-													<div class="card-body col-8 col-lg-8 hide" id="collapsethreeA">
-														<ul class="text-black list-unstyled">
-														<li id="products"><a href="#" >پله 1 </a></li>
-														<li id="products"><a href="#" >پله 2</a></li>
-														<li id="products"><a href="#" >پله 3</a></li>
-														<li id="products"><a href="#" >پله 4</a></li>
-														</ul>
-													</div>
-
-												</div>
-											</div>
-
 										</div>
+
+									  </div>
+
+
+									  <div class="card row d-flex flex-column">
+
+										<div class="row col-12 accordion-item">
+											<div class="col-12">
+												<p class="accordion-header">
+													<button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsetwoA">پله های اول </button>
+												</p>
+											</div>
+
+											<div class="row">
+
+												<div class="col-4 col-lg-4 d-none d-sm-block" id="collapsetwoA">
+													<img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block">
+												</div>
+		
+												<div class="card-body col-8 col-lg-8 hide" id="collapsetwoA">
+													<ul class="text-black list-unstyled">
+													<li id="products"><a href="#" >پله 1 </a></li>
+													<li id="products"><a href="#" >پله 2</a></li>
+													<li id="products"><a href="#" >پله 3</a></li>
+													<li id="products"><a href="#" >پله 4</a></li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+
 										
+
+										<div class="row col-12">
+											<div class="col-12">
+												<p class="accordion-header">
+													<button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsethreeA">پله های اول </button>
+												</p>
+											</div>
+
+											<div class="row">
+
+												<div class="col-4 col-lg-4 d-none d-sm-block" id="collapsethreeA">
+													<img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block">
+												</div>
+		
+												<div class="card-body col-8 col-lg-8 hide" id="collapsethreeA">
+													<ul class="text-black list-unstyled">
+													<li id="products"><a href="#" >پله 1 </a></li>
+													<li id="products"><a href="#" >پله 2</a></li>
+													<li id="products"><a href="#" >پله 3</a></li>
+													<li id="products"><a href="#" >پله 4</a></li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+
 									</div>
-
-
+									
 								</div>
+
+
 							</div>
-
-							</div>
-
-
-							<div class="accordion-item">
-							<p class="accordion-header" id="headingTwo">
-								<button class=" py-3 w-100 d-flex justify-content-between accordion-button" style="padding: 0 20px;background:rgb(95, 77, 73);border:none;outline: none;color: white;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								پله های ساختمانی
-								</button>
-							</p>
-							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-								2	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
-								</div>
-							</div>
-							</div>
-
-
-							<div class="accordion-item">
-							<p class="accordion-header" id="headingThree">
-								<button class=" py-3 w-100 d-flex justify-content-between accordion-button" style="padding: 0 20px;background:rgb(148, 120, 115);border:none;outline: none;color: white;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
-								نرده و حفاظ
-								</button>
-							</p>
-							<div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-								3	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
-								</div>
-							</div>
-							</div>
-
-
-							<div class="accordion-item">
-								<p class="accordion-header" id="headingThree">
-									<button class=" py-3 w-100 d-flex justify-content-between accordion-button" style="padding: 0 20px;background:rgb(177, 145, 139);border:none;outline: none;color: white;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								4	سقف های شفاف
-									</button>
-								</p>
-								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
-									</div>
-								</div>
-							</div>
-
+						</div>
 
 						</div>
+
+
+						<div class="accordion-item">
+						<p class="accordion-header" id="headingTwo">
+							<button class=" py-3 w-100 d-flex justify-content-between " style="padding: 0 20px;border:none;outline: none;color: white;" class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							پله های ساختمانی
+							</button>
+						</p>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+							2	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
+							</div>
+						</div>
+						</div>
+
+
+						<div class="accordion-item">
+						<p class="accordion-header" id="headingThree">
+							<button class=" py-3 w-100 d-flex justify-content-between " style="padding: 0 20px;border:none;outline: none;color: white;" class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+							نرده و حفاظ
+							</button>
+						</p>
+						<div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+							3	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
+							</div>
+						</div>
+						</div>
+
+
+						<div class="accordion-item">
+							<p class="accordion-header" id="headingThree">
+								<button class=" py-3 w-100 d-flex justify-content-between " style="padding: 0 20px;border:none;outline: none;color: white;" class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							4	سقف های شفاف
+								</button>
+							</p>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
+								</div>
+							</div>
+						</div>
+
+
+					</div>
 
 					</div>
 					<!-- پایان دکمه تب های انتخاب شده -->

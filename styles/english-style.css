@@ -332,3 +332,47 @@ transition:0.5s;
 .card-header a{
     color: black;
 }
+
+[class*='accordion'],[class*='accordion'] > *{
+    border: none;
+    background: #fa1942 !important;
+    color: white;
+}
+#collapseOne > div > div > div {
+    background: #fa1942 !important;
+
+}
+#navbar_main > div > ul > li > a , .card-body ul li a{
+    color: white !important;
+}
+.accordion-header  button  , .accordion-body{
+    font-size: 0.68rem;
+}
+
+.languages{
+    padding-top: 12px;
+}
+
+/* #navbar_main > div > ul > li > a{
+    opacity: 1 !important;
+} */
+@media all and (max-width:380px) {
+
+    .languages a , .languages i{
+        font-size: 70% !important;
+    }
+    /* .img-cont{
+        float: right;
+    } */
+    #navone{
+        padding:0 !important; 
+    }
+    .logo-cont{
+        padding-right: 10px !important;
+    }
+        
+}
+
+#navbar-main .nav-link:hover{
+    text-decoration: underline;
+}

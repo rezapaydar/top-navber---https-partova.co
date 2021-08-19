@@ -129,3 +129,79 @@ let navlink=document.querySelectorAll('.nav-link');
 //     }
 //   });
 // }
+
+// $(document).ready(()=>{
+
+//     const objectone = [
+//         {
+//           title: "اولین تایتل",
+//           caption: "لورم ایپسوم وان تو تری فور فایو سیکس",
+//           img: "img/2.jpg",
+//         },
+//         {
+//           title: "دومین تایتل",
+//           caption: "لورم ایپسوم وان تو تری فور فایو سیکس",
+//           img: "img/3.jpg",
+//         },
+//         {
+//           title: "سومین تایتل",
+//           caption: "لورم ایپسوم وان تو تری فور فایو سیکس",
+//           img: "img/4.jpg",
+//         },
+//       ];
+
+//       let carinner = $(".carousel-inner");
+
+//       for (let i in objectone) {
+//         const element = objectone[i];
+
+//         let loop = '';
+
+//         loop += `
+//         <div class="carousel-item active">
+//         <button
+//         type="button"
+//         class="btn"
+
+//       >
+//       <img src="${objectone[i].img}" class="w-50 h-50" alt="First slide" onclick="onclicker(${objectone[i]})">
+//       </button>
+//               <div class="carousel-caption d-none d-md-block">
+//                   <h3>${objectone[i].title}</h3>
+//                   <p>${objectone[i].caption}</p>
+//               </div>
+//           </div>
+//           <div
+//       class="modal fade"
+//       id="exampleModal"
+//       tabindex="-1"
+//       role="dialog"
+//       aria-labelledby="exampleModalLabel"
+//       aria-hidden="true"
+//     >
+//       <div class="modal-dialog" role="document">
+//         <div class="modal-content">
+         
+//           <div class="modal-body">
+//           <img src="${objectone[i].img}" class="w-100 h-100"
+//           </div>
+
+//         </div>
+//       </div>
+//     </div>
+//           `
+
+        
+        
+          
+// console.log(loop);
+//         $('.carousel-inner').append(loop)
+//         // console.log(objectone[i]);
+//       }
+
+//       onclicker(eve){
+//           alert(eve)
+//       }
+
+// })
+
