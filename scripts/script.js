@@ -60,6 +60,8 @@ let toggledrop = document.getElementById('toggledrop');
 let megamenu = document.getElementById('megamenu');
 let navlink=document.querySelectorAll('.nav-link');
 
+
+
 // toggledrop.addEventListener('mouseenter',()=>{
 
 //     $(toggledrop).dropdown('toggle')
@@ -78,25 +80,13 @@ let navlink=document.querySelectorAll('.nav-link');
 // })
 
 
-
+// $('.accordion-collapse ')
 
 // $(document).ready(function(){
 
-//     $("#services").hover(function(){
 
-//         $(toggledrop).dropdown('toggle')
-    
-//     })
-// -
-//     $("#services").mouseleave(function () { 
-//         $(toggledrop).dropdown('toggle')
-//     });
 
-//     $("#services").click(function(){
-
-//         $(toggledrop).dropdown('toggle')
-    
-//     })
+// }
 
     
 

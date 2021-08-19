@@ -55,9 +55,6 @@ referrerpolicy="no-referrer"
 		<div class="top-menu navbar" id="navone">
 
 			<div id="contnav" class="d-flex justify-content-between justify-content-md-between  w-100 ro">
-
-				
-
 				<ul class="navbar-nav languages d-flex flex-row">
 					<li class="nav-item">
 						<button data-trigger="navbar_main" class="d-lg-none btn btn" type="button"> <i class="fas fa-bars text-white"></i> </button>
@@ -81,13 +78,13 @@ referrerpolicy="no-referrer"
 						</a>
 					</li>
 				</ul>
-				<div class="logo-cont col-5 col-sm-4 col-lg-3 d-flex justify-content-start py-3 p-0 " >
+				<div class="logo-cont col-5 col-sm-4 col-lg-3 d-flex d-md-none justify-content-start py-3 p-0 " >
 					<img src="./img/Logo_White.png" class="w-100 ">
 				</div>
 			</div>
 	</div>
 
-	  <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark">
+	  <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark shadow-lg">
       
 		<div class="container-fluid">
   
@@ -96,7 +93,7 @@ referrerpolicy="no-referrer"
 		   </div>
 		   
 	   
-		  <ul class="navbar-nav" id="navbar-main">
+		   <ul class="navbar-nav" id="navbar-main">
 			<li class="nav-item active"> <a class="nav-link" href="#">درباره ما </a> </li>
 			<li class="nav-item"><a class="nav-link" href="#"> پروژه ها </a></li>
 			<li class="nav-item" id="services"> 
@@ -122,6 +119,7 @@ referrerpolicy="no-referrer"
 								<button class="nav-link w-100 py-3 d-flex justify-content-between"  style="padding: 0 54px;background:rgb(177, 145, 139);border:none;outline: none;color: white;" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><span>سقف های شفاف</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 							  </li>
 							</ul>
+
 				  
 						</div>
 					  </div>
@@ -143,7 +141,7 @@ referrerpolicy="no-referrer"
 					  
 											  <div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
 												  <div class="col-12 col-lg-5">
-													  <img src="img/1.jpg" alt="" class="w-100 h-75 d-none d-lg-block">
+													  <img src="img/1.jpg" alt="" class="w-100 h-75 d-none d-md-block">
 												  </div>
 												  <div class="col-12 col-lg-7">
 													<h4>پله فلان</h4>
@@ -207,7 +205,6 @@ referrerpolicy="no-referrer"
   
 								  </div>
 	  
-  
 							  </div>
 	  
 							  <div class="tab-pane  fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -223,7 +220,7 @@ referrerpolicy="no-referrer"
 							  
 							  </div>
 							  
-							  <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+							  <div class="tab-pane fade dropdown-toggle" id="messages" role="tabpanel" aria-labelledby="messages-tab">
   
 								  <div class="row d-flex flex-row-reverse justify-content-between pt-4" >
   
@@ -250,7 +247,7 @@ referrerpolicy="no-referrer"
 						  </div>
   
 					  <!-- محتوای سایز موبایل -->
-						  <div class="accordion py-4 d-block d-md-none" id="accordionExample">
+						  <div class="accordion py-4 d-block d-lg-none" id="accordionExample">
   
   
 							  <div class="accordion-item">
@@ -264,25 +261,25 @@ referrerpolicy="no-referrer"
 							  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 								  <div class="accordion-body d-flex justify-content-center flex-column p-0" style="overflow: scroll;">
   
-									  <div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: left;" >
+									  <div class="row accordion col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: left;" >
    
   
-										  <div class="card row d-flex flex-column">
+										    <div class="card  row d-flex flex-column">
 											  
 											  <div class="row col-12 accordion-item">
 												  <div class="col-12">
 													  <p class="accordion-header">
-														  <button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapseOneA">پله های اول </button>
+														  <button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapseOneA" style="outline: 0;">پله های اول </button>
 													  </p>
 												  </div>
   
-												  <div class="row">
+												  <div class="row accordion-collapse  collapse" style="text-align: right;" id="collapseOneA">
   
-													  <div class="col-4 col-lg-4 d-none d-sm-block" id="collapseOneA">
-														  <img src="img/1.jpg" alt="" class="w-100 h-75 ">
+													  <div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
+														  <img src="img/1.jpg" alt="" class="w-100 h-75 " id="collapseOneA">
 													  </div>
 			  
-													  <div class="card-body col-8 col-lg-8 hide" id="collapseOneA">
+													  <div class="card-body col-8 col-lg-8 hide" >
 														  <ul class="text-black list-unstyled">
 														  <li id="products"><a href="#" >پله 1 </a></li>
 														  <li id="products"><a href="#" >پله 2</a></li>
@@ -292,27 +289,28 @@ referrerpolicy="no-referrer"
 													  </div>
   
 												  </div>
+
 											  </div>
 
 											</div>
   
 
-											<div class="card row d-flex flex-column">
+											<div class="card  row d-flex flex-column">
 
 											  <div class="row col-12 accordion-item">
 												  <div class="col-12">
 													  <p class="accordion-header">
-														  <button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsetwoA">پله های اول </button>
+														  <button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsetwoA">پله های دوم </button>
 													  </p>
 												  </div>
   
-												  <div class="row">
+												  <div class="row accordion-collapse collapse" style="text-align: right;" id="collapsetwoA">
   
-													  <div class="col-4 col-lg-4 d-none d-sm-block" id="collapsetwoA">
-														  <img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block">
+													  <div class="col-4 col-lg-4  d-none d-sm-block" id="collapsetwoA" style="padding-top:1.3rem;">
+														  <img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block" >
 													  </div>
 			  
-													  <div class="card-body col-8 col-lg-8 hide" id="collapsetwoA">
+													  <div class="card-body col-8 col-lg-8 hide" >
 														  <ul class="text-black list-unstyled">
 														  <li id="products"><a href="#" >پله 1 </a></li>
 														  <li id="products"><a href="#" >پله 2</a></li>
@@ -324,34 +322,37 @@ referrerpolicy="no-referrer"
 												  </div>
 											  </div>
 
-											  
-  
-											  <div class="row col-12">
-												  <div class="col-12">
-													  <p class="accordion-header">
-														  <button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsethreeA">پله های اول </button>
-													  </p>
-												  </div>
-  
-												  <div class="row">
-  
-													  <div class="col-4 col-lg-4 d-none d-sm-block" id="collapsethreeA">
-														  <img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block">
-													  </div>
-			  
-													  <div class="card-body col-8 col-lg-8 hide" id="collapsethreeA">
-														  <ul class="text-black list-unstyled">
-														  <li id="products"><a href="#" >پله 1 </a></li>
-														  <li id="products"><a href="#" >پله 2</a></li>
-														  <li id="products"><a href="#" >پله 3</a></li>
-														  <li id="products"><a href="#" >پله 4</a></li>
-														  </ul>
-													  </div>
-  
-												  </div>
-											  </div>
-  
-										  </div>
+										  	</div>
+
+
+											<div class="card accordion row d-flex flex-column">
+
+												<div class="row col-12">
+													<div class="col-12">
+														<p class="accordion-header">
+															<button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsethreeA">پله های سوم
+														</p>
+													</div>
+
+													<div class="row accordion-collapse collapse" id="collapsethreeA">
+
+														<div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
+															<img src="img/1.jpg" alt="" id="collapsethreeA" class="w-100 h-75  d-lg-block" >
+														</div>
+				
+														<div class="card-body col-8 col-lg-8 hide">
+															<ul class="text-black list-unstyled">
+															<li id="products"><a href="#" >پله 1 </a></li>
+															<li id="products"><a href="#" >پله 2</a></li>
+															<li id="products"><a href="#" >پله 3</a></li>
+															<li id="products"><a href="#" >پله 4</a></li>
+															</ul>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
 										  
 									  </div>
   
@@ -411,7 +412,7 @@ referrerpolicy="no-referrer"
   
   
 					</div>
-			  </li>
+			</li>
 			<li class="nav-item">
 			  <a class="nav-link " href="#">  کاتالوگ ها  </a>
 			</li>
@@ -422,6 +423,9 @@ referrerpolicy="no-referrer"
 			  <a class="nav-link " href="#"> تماس باما  </a>
 			</li>
 		  </ul>
+		  <div class="logo-cont col-4 col-sm-4 col-lg-3 d-none d-lg-flex justify-content-start py-3 p-0 " >
+			<img src="./img/Logo_White.png" class="w-50 h-75 ">
+		  </div>
 		 
 		</div> <!-- container-fluid.// -->
 	  </nav>

@@ -170,7 +170,7 @@ body.offcanvas-active{
 	    height: 100%;
 	    z-index: 1200;
 	    width:80%;
-	    overflow-y: scroll;
+	    overflow-y: hidden;
 	    overflow-x: hidden;
 	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
 	}
@@ -184,32 +184,29 @@ body.offcanvas-active{
 	}
 
     #products{
-        margin: 3px;
-        padding:5px 0 5px 10px ;
+        /* margin: 3px; */
         transition: 0.3s;
     }
 
 
 
     #products a{
+        padding:10px;
         text-decoration: none;
         color: rgb(75, 61, 58);
     }
     
     #products:active{
-        
-        border: 1px solid rgb(143, 142, 142);
         border-radius: 1px;
         border-radius: 1px;
-    background: #f5f5f5;
-    box-shadow: inset 5px 5px 10px #f1f1f1,
-                inset -5px -5px 10px #ffffff;
+        background: #f5f5f5;
+        color:#da1539 !important;
     }
 
 }
 #products{
-    
-    transition: 0.3s;
+    transition: 0.1 s;
+    color:#da1539 !important;
 }
 #suggest > img{
 opacity: .1;
@@ -279,7 +276,7 @@ transition: 0.3s;
                 inset -12px -12px 24px #cca7a0;
 }
 #products a{
-    padding-left: 10px;
+    padding: 10px;
     text-decoration: none;
     color: #403431;
 }
@@ -356,7 +353,7 @@ transition:0.5s;
 /* #navbar_main > div > ul > li > a{
     opacity: 1 !important;
 } */
-@media all and (max-width:380px) {
+@media all and (max-width:400px) {
 
     .languages a , .languages i{
         font-size: 70% !important;
@@ -375,4 +372,40 @@ transition:0.5s;
 
 #navbar-main .nav-link:hover{
     text-decoration: underline;
+}
+
+#toggledrop::after{
+    transition: 0.2s;
+    transform: rotate(-90deg);
+}
+
+.show::after{
+    transform: rotate(360deg) !important;
+}
+.card{
+    border: 0 !important;
+}
+.accordion-header button::after{
+    display: inline-block;
+    margin-right: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-left: .3em solid transparent;
+    border-bottom: 0;
+    border-right: .3em solid transparent;
+    transition: 0.2s;
+    transform: rotate(-90deg);
+}
+.accordion-header button[aria-expanded='true']::after{
+    display: inline-block;
+    margin-right: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-left: .3em solid transparent;
+    border-bottom: 0;
+    border-right: .3em solid transparent;
+    transition: 0.2s;
+    transform: rotate(360deg);
 }
