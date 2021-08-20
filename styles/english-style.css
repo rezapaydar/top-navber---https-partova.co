@@ -191,6 +191,7 @@ body.offcanvas-active{
 
 
     #products a{
+        font-size: 0.6rem;
         padding:10px;
         text-decoration: none;
         color: rgb(75, 61, 58);
@@ -276,6 +277,7 @@ transition: 0.3s;
                 inset -12px -12px 24px #cca7a0;
 }
 #products a{
+    font-size: 0.6rem;
     padding: 10px;
     text-decoration: none;
     color: #403431;
