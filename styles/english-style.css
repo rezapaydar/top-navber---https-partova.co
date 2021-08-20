@@ -385,6 +385,10 @@ transition:0.5s;
 .card{
     border: 0 !important;
 }
+.accordion-header button .accordion-header button {
+    outline: none;
+}
+
 .accordion-header button::after{
     display: inline-block;
     margin-right: .255em;

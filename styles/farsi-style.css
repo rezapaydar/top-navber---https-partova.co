@@ -236,7 +236,36 @@ transition: 0.3s;
                 inset -12px -12px 24px #cca7a0;
 }
 
+#myTab> li> button#home-tab:hover{
+    border-radius: 0px;
+    background: #4b3d3a;
+    box-shadow: inset 12px 12px 24px #403431,
+                inset -12px -12px 24px #564643;
+}
+
+#myTab> li> button#profile-tab:hover{
+    border-radius: 0px;
+    background: #5f4d49;
+    box-shadow: inset 17px 17px 34px #51413e,
+                inset -17px -17px 34px #6d5954;
+}
+
+#myTab> li> button#messages-tab:hover{
+    border-radius: 0px;
+    background: #947873;
+    box-shadow: inset 12px 12px 24px #7e6662,
+                inset -12px -12px 24px #aa8a84;
+}
+
+#myTab> li> button#settings-tab:hover{
+    border-radius: 0px;
+    background: #b1918b;
+    box-shadow: inset 12px 12px 24px #967b76,
+                inset -12px -12px 24px #cca7a0;
+}
+
 #products a{
+    font-size: 0.6rem;
     padding-right: 10px;
     text-decoration: none;
     color: #403431;
@@ -406,6 +435,12 @@ transition: 0.3s;
             transition: 0.2s;
             transform: rotate(360deg);
         }
+
+        /* #services:hover .megamenu {
+            display: block;
+            margin-top: 0;
+         } */
+
         /* .accordion-header button::after{
             transform: rotate(360deg);
         } */

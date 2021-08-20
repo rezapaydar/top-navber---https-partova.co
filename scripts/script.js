@@ -1,3 +1,43 @@
+
+$(document).ready(function(){
+    let toggledrop = document.getElementById('toggledrop');
+    let megamenu = document.getElementById('megamenu');
+    let navlink=document.querySelectorAll('.nav-link');
+
+    $(toggledrop).mouseenter((e)=>{
+
+        $(toggledrop).dropdown('toggle')
+    
+        $('button.nav-link').hover(function(){
+            $(this).tab('show');
+        })
+    
+    
+    
+    })
+    $("#g3").mouseleave((e)=>{
+
+        // const timing = setTimeout(()=>{
+            $(toggledrop).dropdown('toggle')
+            // if($('#tab-content').hover()){
+            //     alert('heyyyyy')
+            //     clearTimeout(timing)
+            // }
+        // },1000)
+        
+
+        
+    
+        $('button.nav-link').hover(function(){
+            $(this).tab('show');
+        })
+    
+    
+    
+    })
+
+})
+
 document.addEventListener("DOMContentLoaded", function(){
     /////// Prevent closing from click inside dropdown
     document.querySelectorAll('.dropdown-menu').forEach(function(element){
@@ -56,37 +96,66 @@ document.addEventListener("DOMContentLoaded", function(){
     
 }); 
 
-let toggledrop = document.getElementById('toggledrop');
-let megamenu = document.getElementById('megamenu');
-let navlink=document.querySelectorAll('.nav-link');
 
 
 
-// toggledrop.addEventListener('mouseenter',()=>{
+
+// $(toggledrop).hover('mouseenter',(e)=>{
 
 //     $(toggledrop).dropdown('toggle')
-//     $(`${toggledrop} i`).css('transform','rotate(90deg)')
 
+//     $('.nav-link').hover(function(){
+//         $(this).tab('show');
+//     })
+
+//     e.stopPropagation();
 
 
 // })
 
-// toggledrop.addEventListener('mouseleave',()=>{
+// toggledrop.addEventListener('mouseleave',(e)=>{
+
+//     $(toggledrop).dropdown('dispose')
+
+//     e.stopPropagation();
+
+//     // $('.nav > .nav-item > button.nav-link').mouseenter(function(){
+//     //     $(this).tab('show');
+//     // })
+
+
+// })
+
+// toggledrop.addEventListener('mouseout',()=>{
 
 //     $(toggledrop).dropdown('toggle')
-//     $(toggledrop).css('transform','rotate(0deg)')
 
+//     // $('#homeg').mouseleave(function(){
+//     //     $(this).tab('hide');
+//     // })
+//     // $('#profile').mouseleave(function(){
+//     //     $(this).tab('hide');
+//     // })
+//     // $('#messages').mouseleave(function(){
+//     //     $(this).tab('hide');
+//     // })
+//     // $('#settings').mouseleave(function(){
+//     //     $(this).tab('hide');
+
+// })
+// // 
+// toggledrop.addEventListener('',()=>{
+
+// setTimeout(()=>{
+//     $(toggledrop).dropdown('toggle')
+// },3000)
 
 // })
 
 
 // $('.accordion-collapse ')
 
-// $(document).ready(function(){
 
-
-
-// }
 
     
 
