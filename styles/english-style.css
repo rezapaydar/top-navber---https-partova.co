@@ -1,8 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 @font-face{
     font-family: iransansbold;
     src: url(../fonts/IRANSansWeb\(FaNum\)\ Bold.otf);
@@ -11,9 +7,7 @@
     font-family: iransansnormal;
     src: url(../fonts/IRANSansWeb\(FaNum\)\ Bold.otf);
 }
-body{
-    background: #f2f2f2;
-}
+
 button,p,span,title,label{
     font-size: 0.75rem;
     font-weight: 600;
@@ -103,9 +97,7 @@ div.collapse a:active{
     top: 4px;
 }
 
-.tab-content button,.tab-content p,.tab-content h1,.tab-content h2,.tab-content h3,.tab-content h4,.tab-content h5,.tab-content h6,.tab-content span,.tab-content title,.tab-content label,.tab-content li,.tab-content ul {
-    color:rgb(95, 77, 73);
-}
+
 
 
 .navbar .megamenu{ padding: 1rem; }
@@ -183,21 +175,21 @@ body.offcanvas-active{
 		display: block;
 	}
 
-    #products{
+    li.products{
         /* margin: 3px; */
         transition: 0.3s;
     }
 
 
 
-    #products a{
+    li.products a{
         font-size: 0.6rem;
         padding:10px;
         text-decoration: none;
         color: rgb(75, 61, 58);
     }
     
-    #products:active{
+    li.products:active{
         border-radius: 1px;
         border-radius: 1px;
         background: #f5f5f5;
@@ -205,7 +197,7 @@ body.offcanvas-active{
     }
 
 }
-#products{
+li.products{
     transition: 0.1 s;
     color:#da1539 !important;
 }
@@ -276,7 +268,7 @@ transition: 0.3s;
     box-shadow: inset 12px 12px 24px #967b76,
                 inset -12px -12px 24px #cca7a0;
 }
-#products a{
+li.products a{
     font-size: 0.6rem;
     padding: 10px;
     text-decoration: none;

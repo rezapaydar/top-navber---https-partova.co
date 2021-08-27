@@ -1,3 +1,6 @@
+
+        /*================================ start public styles , please remove its ========================================*/
+
 @font-face{
     font-family: iransansbold;
     src: url(../fonts/IRANSansWeb\(FaNum\)\ Bold.otf);
@@ -6,9 +9,7 @@
     font-family: iransansnormal;
     src: url(../fonts/IRANSansWeb\(FaNum\)\ Bold.otf);
 }
-body{
-    background: #f2f2f2;
-}
+
 button,p,span,title,label{
     font-size: 0.75rem;
     font-weight: 600;
@@ -26,7 +27,19 @@ button,p,span,title,label{
     font-weight: normal;
 
   }
+  body{
+      background: blue;
+  }
 
+          /*================================ end public styles , please remove its ========================================*/
+
+
+        /*================================ start menu ========================================*/
+
+*{
+    direction: rtl;
+    text-align: right;
+}
 #navbar_main{
     font-family: iransans;
     padding:0.5rem 1.75rem;
@@ -36,12 +49,30 @@ button,p,span,title,label{
 
 #navone{
     font-family: iransans;
-    padding:0.1rem 3rem;
+    padding:0.5rem 1.75rem;
      background:rgb(50,50,50);
      direction: rtl;
      color: white;
 
 }
+
+
+#navone a.nav-link , #navone span{
+    font-size: 0.75rem;
+    color: white;
+    cursor: pointer;
+
+}
+#navone span{
+    line-height: 30px;
+}
+
+#navbar_main > div > ul > li > a,.card-body ul li a{
+    color: white !important;
+}
+
+        /*================================ end menu ========================================*/
+
 
 .nav-item a{
     font-size: 0.75rem;
@@ -56,20 +87,8 @@ div.collapse a:hover{
 
 }
 
-div.collapse a:active{
-    color: white;
-    text-decoration: white;
-}
 
-#navone a.nav-link , #navone span{
-    font-size: 0.75rem;
-    color: white;
-    cursor: pointer;
 
-}
-#navone span{
-    line-height: 30px;
-}
 .sidepanel  {
     width: 0;
     position: fixed;
@@ -97,30 +116,10 @@ div.collapse a:active{
     top: 4px;
 }
 
-.tab-content button,.tab-content p,.tab-content h1,.tab-content h2,.tab-content h3,.tab-content h4,.tab-content h5,.tab-content h6,.tab-content span,.tab-content title,.tab-content label,.tab-content li,.tab-content ul {
-    color:rgb(95, 77, 73);
-}
-
 
 .navbar .megamenu{ padding: 1rem; }
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-	
-	.navbar .has-megamenu{position:static!important;}
-	.navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
-	
-}	
-/* ============ desktop view .end// ============ */
 
 
-/* ============ mobile view ============ */
-@media(max-width: 991px){
-	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
-		overflow-y: auto;
-	    max-height: 90vh;
-	    margin-top:10px;
-	}
-}
 
 body.offcanvas-active{
 	overflow:hidden;
@@ -150,51 +149,10 @@ body.offcanvas-active{
 }
 
 /* ============ mobile view ============ */
-@media all and (max-width: 991px) {
-	
-	.offcanvas-header{ display:block; }
-
-	.mobile-offcanvas{
-		visibility: hidden;
-		transform:translateX(100%);
-	    border-radius:0; 
-		display:block;
-	    position: fixed;
-	    top: 0; left:20%;
-	    height: 100%;
-	    z-index: 1200;
-	    width:80%;
-	    overflow-y: scroll;
-	    overflow-x: hidden;
-	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
-	}
-
-	.mobile-offcanvas.show{
-		visibility: visible;
-    	transform: translateX(0%);
-	}
-	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
-		display: block;
-	}
-
-    #products{
-    
-        padding:5px 5px 0 10px ;
-        transition: 0.3s;
-    }
-    #products a{
-        text-decoration: none;
-        color: black;
-    }
-    
 
 
 
-
-}
-
-
-#products{
+li.products{
     
     transition: 0.3s;
    
@@ -208,63 +166,16 @@ body.offcanvas-active{
 transition: 0.3s;
 }
 
-#myTab> li> button#home-tab:active{
-    border-radius: 0px;
-    background: #4b3d3a;
-    box-shadow: inset 12px 12px 24px #403431,
-                inset -12px -12px 24px #564643;
-}
 
-#myTab> li> button#profile-tab:active{
-    border-radius: 0px;
-    background: #5f4d49;
-    box-shadow: inset 17px 17px 34px #51413e,
-                inset -17px -17px 34px #6d5954;
-}
 
-#myTab> li> button#messages-tab:active{
-    border-radius: 0px;
-    background: #947873;
-    box-shadow: inset 12px 12px 24px #7e6662,
-                inset -12px -12px 24px #aa8a84;
-}
-
-#myTab> li> button#settings-tab:active{
+#myTab> li> button:hover{
     border-radius: 0px;
     background: #b1918b;
     box-shadow: inset 12px 12px 24px #967b76,
                 inset -12px -12px 24px #cca7a0;
 }
 
-#myTab> li> button#home-tab:hover{
-    border-radius: 0px;
-    background: #4b3d3a;
-    box-shadow: inset 12px 12px 24px #403431,
-                inset -12px -12px 24px #564643;
-}
-
-#myTab> li> button#profile-tab:hover{
-    border-radius: 0px;
-    background: #5f4d49;
-    box-shadow: inset 17px 17px 34px #51413e,
-                inset -17px -17px 34px #6d5954;
-}
-
-#myTab> li> button#messages-tab:hover{
-    border-radius: 0px;
-    background: #947873;
-    box-shadow: inset 12px 12px 24px #7e6662,
-                inset -12px -12px 24px #aa8a84;
-}
-
-#myTab> li> button#settings-tab:hover{
-    border-radius: 0px;
-    background: #b1918b;
-    box-shadow: inset 12px 12px 24px #967b76,
-                inset -12px -12px 24px #cca7a0;
-}
-
-#products a{
+li.products a{
     font-size: 0.6rem;
     padding-right: 10px;
     text-decoration: none;
@@ -284,33 +195,72 @@ transition: 0.3s;
         opacity: 0;
         transition:0.5s;
         }
+
         
         .suggest:hover img{
             opacity: 1;
         }
+
+        .suggest a{
+            text-decoration: 0;
+            color: black;
+        }
+        .suggest a:hover{
+            cursor: pointer;
+        }
         
         #g3{
-            background:white;
-        }
-        
-        @media all and (max-width:800px) {
-            #g3{
-                background:#da1539;
-            }
-        
-            .suggest img{
-                opacity: 1;
-                transition:0.5s;
-                }
-                
-                
+            background:transparent;
         }
 
+        ul{
+            padding-right: 0 !important;
+        }
         
+       
+
+
+
+
+
+        /*================================ start cards ========================================*/
+
+        .card-header{
+            background: white;
+        }
+        
+        .card-header a{
+            color: black;
+        }
+
+        .card-body ul li a:active{
+            /* background: #fa1942 !important; */
+            color: #fa1942 !important;
+        }
+        .card-body{
+            padding-top: 20px;
+        }
+
+        .card{
+            border: 0 !important;
+        }
+        /*================================ end cards ========================================*/
+
+
+
+
+
+        /*================================ start accordion ========================================*/
+
+        #collapseOne > div > div > div {
+            padding: 0 !important;
+            background: #fa1942 !important;
+
+        }
+        
+
         .accordion-button{
             font-size: 0.75rem;
-        
-        
         }
         
         .accordion-button::after{
@@ -323,24 +273,7 @@ transition: 0.3s;
             content: "";
         
         }
-        .card-header{
-            background: white;
-        }
         
-        .card-header a{
-            color: black;
-        }
-
-        @media all and (max-width:400px) {
-           
-            #products{
-                width: 150%;
-                text-align: center;
-                transition: 0.3s;
-            }
-                
-        }
-
         [class*='accordion'],[class*='accordion'] > *{
             
             padding: 5px;
@@ -348,69 +281,13 @@ transition: 0.3s;
             background: #fa1942 !important;
             color: white;
         }
-        #collapseOne > div > div > div {
-            padding: 0 !important;
-            background: #fa1942 !important;
 
-        }
-        #navbar_main > div > ul > li > a,.card-body ul li a{
-            color: white !important;
-        }
-        .card-body ul li a:active{
-            /* background: #fa1942 !important; */
-            color: #fa1942 !important;
-        }
-        .card-body{
-            padding-top: 20px;
-        }
         .accordion-header  button  , .accordion-body{
             outline: 0;
             font-size: 0.68rem;
         }
 
-        @media all and (max-width:720px) {
-
-
-            .languages{
-                padding-top: 12px;
-            }
-
-        }
         
-        @media all and (max-width:380px) {
-
-            .languages{
-                padding-top: 12px;
-            }
-            .languages a , .languages i{
-                font-size: 70% !important;
-            }
-            /* .img-cont{
-                float: right;
-            } */
-            #navone{
-                padding:0 !important; 
-            }
-            .logo-cont{
-                padding-left: 10px !important;
-            }
-                
-        }
-
-        #navbar-main .nav-link:hover{
-            text-decoration: underline;
-        }
-        #toggledrop::after{
-            transition: 0.2s;
-            transform: rotate(90deg);
-        }
-
-        .show::after{
-            transform: rotate(360deg) !important;
-        }
-        .card{
-            border: 0 !important;
-        }
         .accordion-header button::after{
             display: inline-block;
             margin-right: .255em;
@@ -435,6 +312,136 @@ transition: 0.3s;
             transition: 0.2s;
             transform: rotate(360deg);
         }
+
+        #navbar-main .nav-link:hover{
+            text-decoration: underline;
+        }
+        #toggledrop::after{
+            transition: 0.2s;
+            transform: rotate(90deg);
+        }
+
+        .show::after{
+            transform: rotate(360deg) !important;
+        }
+
+        .navbar-nav , .navbar-nav li{
+            padding-inline-start: 0px !important;
+        }
+
+        /*===================================  end accordion  ==========================================*/
+
+
+        /*================================  start media queries  ========================================*/
+
+        @media all and (min-width: 992px) {
+	
+            .navbar .has-megamenu{position:static!important;}
+            .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+            
+        }	
+        @media(max-width: 991px){
+            .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top:10px;
+            }
+        }
+        @media all and (max-width: 991px) {
+            
+            .offcanvas-header{ display:block; }
+        
+            .mobile-offcanvas{
+                visibility: hidden;
+                transform:translateX(100%);
+                border-radius:0; 
+                display:block;
+                position: fixed;
+                top: 0; left:20%;
+                height: 100%;
+                z-index: 1200;
+                width:80%;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+            }
+        
+            .mobile-offcanvas.show{
+                visibility: visible;
+                transform: translateX(0%);
+            }
+            .mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+                display: block;
+            }
+        
+            li.products{
+            
+                padding:5px 5px 0 10px ;
+                transition: 0.3s;
+            }
+            li.products a{
+                text-decoration: none;
+                color: black;
+            }
+            
+        
+        
+        
+        
+        }
+            @media all and (max-width:800px) {
+                    #g3{
+                        background:#da1539;
+                    }
+                
+                    .suggest img{
+                        opacity: 1;
+                        transition:0.5s;
+                        }
+                        
+                        
+                }
+        
+         @media all and (max-width:400px) {
+                   
+                    li.products{
+                        width: 150%;
+                        text-align: center;
+                        transition: 0.3s;
+                    }
+                        
+                }
+                @media all and (max-width:720px) {
+        
+        
+                    .languages{
+                        padding-top: 12px;
+                    }
+        
+                }
+                
+                @media all and (max-width:380px) {
+        
+                    .languages{
+                        padding-top: 12px;
+                    }
+                    .languages a , .languages i{
+                        font-size: 70% !important;
+                    }
+                    /* .img-cont{
+                        float: right;
+                    } */
+                    #navone{
+                        padding:0 !important; 
+                    }
+                    .logo-cont{
+                        padding-left: 10px !important;
+                    }
+                        
+                }
+
+                /*================================ end media queries ========================================*/
+
 
         /* #services:hover .megamenu {
             display: block;
