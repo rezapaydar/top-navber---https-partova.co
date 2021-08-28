@@ -225,6 +225,10 @@ opacity: 0;
 transition:0.5s;
 }
 
+body{
+    background: blue;
+}
+
 .suggest:hover img{
     opacity: 1;
 }
