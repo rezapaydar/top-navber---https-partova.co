@@ -168,13 +168,6 @@ transition: 0.3s;
 
 
 
-#myTab> li> button:hover{
-    border-radius: 0px;
-    background: #b1918b;
-    box-shadow: inset 12px 12px 24px #967b76,
-                inset -12px -12px 24px #cca7a0;
-}
-
 li.products a{
     font-size: 0.6rem;
     padding-right: 10px;
@@ -261,6 +254,10 @@ li.products a{
 
         .accordion-button{
             font-size: 0.75rem;
+        }
+
+        .accordion ul{
+            padding-right: 10px !important;
         }
         
         .accordion-button::after{
@@ -432,7 +429,7 @@ li.products a{
                         float: right;
                     } */
                     #navone{
-                        padding:0 !important; 
+                        padding:0 ; 
                     }
                     .logo-cont{
                         padding-left: 10px !important;

@@ -213,68 +213,14 @@ transition: 0.2;
 transition: 0.3s;
 }
 
-#myTab> li> button#home-tab:active{
-    border-radius: 0px;
-    background: #4b3d3a;
-    box-shadow: inset 12px 12px 24px #403431,
-                inset -12px -12px 24px #564643;
-}
 
-#myTab> li> button#profile-tab:active{
-    border-radius: 0px;
-    background: #5f4d49;
-    box-shadow: inset 17px 17px 34px #51413e,
-                inset -17px -17px 34px #6d5954;
-}
-
-#myTab> li> button#messages-tab:active{
-    border-radius: 0px;
-    background: #947873;
-    box-shadow: inset 12px 12px 24px #7e6662,
-                inset -12px -12px 24px #aa8a84;
-}
-
-#myTab> li> button#settings-tab:active{
-    border-radius: 0px;
-    background: #b1918b;
-    box-shadow: inset 12px 12px 24px #967b76,
-                inset -12px -12px 24px #cca7a0;
-}
-
-#myTab> li> button#home-tab:hover{
-    border-radius: 0px;
-    background: #4b3d3a;
-    box-shadow: inset 12px 12px 24px #403431,
-                inset -12px -12px 24px #564643;
-}
-
-#myTab> li> button#profile-tab:hover{
-    border-radius: 0px;
-    background: #5f4d49;
-    box-shadow: inset 17px 17px 34px #51413e,
-                inset -17px -17px 34px #6d5954;
-}
-
-#myTab> li> button#messages-tab:hover{
-    border-radius: 0px;
-    background: #947873;
-    box-shadow: inset 12px 12px 24px #7e6662,
-                inset -12px -12px 24px #aa8a84;
-}
-
-#myTab> li> button#settings-tab:hover{
-    border-radius: 0px;
-    background: #b1918b;
-    box-shadow: inset 12px 12px 24px #967b76,
-                inset -12px -12px 24px #cca7a0;
-}
 li.products a{
     font-size: 0.6rem;
     padding: 10px;
-    text-decoration: none;
-    color: #403431;
+    text-decoration: none !important;
+    color: #403431 !important;
 }
-.suggest img{
+.suggest img {
 opacity: 0;
 transition:0.5s;
 }

@@ -39,6 +39,13 @@ $(document).ready(function(){
     
 })
 
+// ==========================* function open links on grey menu *=====================================
+let openlinks=(link)=>{
+    window.open(link,"_blank");
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
     /////// Prevent closing from click inside dropdown
     document.querySelectorAll('.dropdown-menu').forEach(function(element){
