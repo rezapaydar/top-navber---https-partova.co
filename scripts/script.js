@@ -35,6 +35,23 @@ $(document).ready(function(){
     
     
     })
+
+    $("#tabpane-select-buttons").mouseenter((e)=>{
+
+            
+        $('#tabpane-selected-menu').removeClass('d-none');
+        $('#tabpane-selected-menu').addClass('bg-white');
+    
+    })
+    $("#g3").mouseleave((e)=>{
+
+            
+        $('#tabpane-selected-menu').addClass('d-none');
+    
+    })
+
+
+
     
     
 })
