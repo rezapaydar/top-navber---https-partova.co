@@ -45,7 +45,6 @@ $(document).ready(function(){
     })
     $("#g3").mouseleave((e)=>{
 
-            
         $('#tabpane-selected-menu').addClass('d-none');
     
     })
