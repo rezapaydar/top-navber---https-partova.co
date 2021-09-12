@@ -28,7 +28,7 @@ button,p,span,title,label{
 
   }
   body{
-      background: blue;
+      background: white;
   }
 
           /*================================ end public styles , please remove its ========================================*/
@@ -43,7 +43,7 @@ button,p,span,title,label{
 #navbar_main{
     font-family: iransans;
     padding:0.5rem 1.75rem;
-    background:#da1539;
+    background:#fa1942;
     direction: rtl;
 }
 
@@ -246,7 +246,6 @@ li.products a{
         /*================================ start accordion ========================================*/
 
         #collapseOne > div > div > div {
-            padding: 0 !important;
             background: #fa1942 !important;
 
         }

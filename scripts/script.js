@@ -3,6 +3,7 @@ $(document).ready(function(){
     let toggledrop = document.getElementById('toggledrop');
     let megamenu = document.getElementById('megamenu');
     let navlink=document.querySelectorAll('.nav-link');
+    const bool=false;
 
     $(toggledrop).mouseenter((e)=>{
 
@@ -24,6 +25,7 @@ $(document).ready(function(){
             //     clearTimeout(timing)
             // }
         // },1000)
+
         
 
         
@@ -32,32 +34,41 @@ $(document).ready(function(){
             $(this).tab('show');
         })
     
-    
+    مدیر
     
     })
 
     $("#tabpane-select-buttons").mouseenter((e)=>{
 
+        if(window.innerWidth<=800){
+            $("#btntabs").css('background','#fa1942 !important')
+        }else{
             
-        $('#tabpane-selected-menu').removeClass('d-none');
-        $('#tabpane-selected-menu').addClass('bg-white');
+            $("#btntabs").css('background','white')
+        
+        }
+           
+            
+        $('#btntabs').removeClass('bg-transparent');
+        $('##btntabs').addClass('bg-white');
     
     })
     $("#g3").mouseleave((e)=>{
 
-        $('#tabpane-selected-menu').addClass('d-none');
+        
     
     })
 
 
-
-    
+ 
     
 })
+
 
 // ==========================* function open links on grey menu *=====================================
 let openlinks=(link)=>{
     window.open(link,"_blank");
+    alert('on double clickedddd');
 }
 
 
