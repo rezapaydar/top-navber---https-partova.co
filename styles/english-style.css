@@ -363,3 +363,28 @@ transition:0.5s;
 #g3 > div.row.col-12.col-lg-8.w-75.bg-white{
     padding: 0;
 }
+
+button[id*='tab']{
+    padding: 20px 54px !important;
+    box-shadow:  20px 20px 60px #bebebe;
+    background:#eee !important;
+    border:none;
+    outline: none;
+    color:black !important;
+    transition: 0.3s;
+
+}
+button[id*='tab']:hover{
+    border-radius: 0px;
+    color:white !important;
+
+    background: #fa1942 !important;
+    box-shadow:  12px 12px 31px #c11333,
+                 -12px -12px 31px #ff1f51;
+                 z-index: 99999999;
+    padding: 20px 40px !important;
+
+}
+#btntabs{
+    overflow-y: ;
+}

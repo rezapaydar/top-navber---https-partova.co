@@ -1,33 +1,60 @@
 
 $(document).ready(function(){
     let toggledrop = document.querySelectorAll("a[id*='toggledrop']");
+    let btntabs = document.getElementById('btntabs');
     let megamenu = document.getElementById('megamenu');
     let navlink=document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll',()=>{
+        if(window.pageYOffset > 1000){
+            $('#fixed-navbar').css('position','fixed')
+            $('#fixed-navbar').css('width','100%')
+
+        }else{
+            $('#fixed-navbar').removeAttr('position','fixed')
+        }
+    })
     
     for (let i = 0; i < toggledrop.length; i++) {
         const element = toggledrop[i];
-        $(element).mouseenter((e)=>{
+        element.addEventListener('mouseenter',()=>{
 
-            $(element).dropdown('toggle');
-            $('#btntabs').css('display','block');
+        $(element).dropdown('toggle')
+
+        })
+        // $(element).mouseenter((e)=>{
+
+        //     $(element).dropdown('toggle');
+        //     $(element).toggleClass('show');
 
         
-        })
-        $("#btntabs").mouseleave((e)=>{
+        // })
+        // $(element).mouseleave((e)=>{
+        //     $(element).removeClass('show');
+        // })
 
-            // const timing = setTimeout(()=>{
-                $(element).dropdown('toggle')
-
-                // if($('#tab-content').hover()){
-                //     alert('heyyyyy')
-                //     clearTimeout(timing)
-                // }
-            // },1000)
-    
         
-        })
     }
+    btntabs.addEventListener('mouseleave',()=>{
     
+        $(btntabs).dropdown('toggle')
+
+    })
+    // $("#btntabs").mouseleave((e)=>{
+
+    //     // const timing = setTimeout(()=>{
+    //         $(element).dropdown('toggle',function(){
+    //             alert('fuckkkkk')
+
+    //         })
+    //         // if($('#tab-content').hover()){
+    //         //     alert('heyyyyy')
+    //         //     clearTimeout(timing)
+    //         // }
+    //     // },1000)
+
+    
+    // })
     
 
     $("#tabpane-select-buttons").mouseenter((e)=>{
@@ -56,7 +83,6 @@ $(document).ready(function(){
 // ==========================* function open links on grey menu *=====================================
 let openlinks=(link)=>{
     window.open(link,"_blank");
-    alert('on double clickedddd');
 }
 
 
