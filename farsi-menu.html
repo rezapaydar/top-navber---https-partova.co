@@ -10,6 +10,17 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"
+></script>
+<script src="scripts/vue.js"></script>
 
 
 <link
@@ -32,7 +43,8 @@ referrerpolicy="no-referrer"
 />
 
 <link rel="stylesheet" href="./styles/farsi-style.css">
-<link rel="stylesheet" href="./scripts/script.js">
+<link rel="stylesheet" href="./styles/tabstyle.css">
+
 
 </head>
 
@@ -98,29 +110,29 @@ referrerpolicy="no-referrer"
 			<li class="nav-item active"> <a class="nav-link" href="#">درباره ما </a> </li>
 			<li class="nav-item"><a class="nav-link" href="#"> پروژه ها </a></li>
 			<li class="nav-item" id="services"> 
-				<a class="nav-link dropdown-toggle" id="toggledrop" href="#" data-bs-toggle="dropdown">حوزه های فعالیت</a>
-				<div class="dropdown-menu megamenu" id="megamenu" role="menu" style="padding: 0 !important;margin: 0 !important; background: transparent;border: none;">
-					<div class="row bg-transparent " id="g3" style="width: 112%;">
+				<a class="nav-link dropdown-toggle" id="toggledrop1"  href="#" data-bs-toggle="dropdown">حوزه های فعالیت</a>
+				<div class="dropdown-menu megamenu" id="megamenu" role="menu" style="padding: 0 !important;margin: 0 !important;background: transparent;">
+					
+					<div class="row  " id="g3" style="width: 112%;">
 	
 					  <!--شروع دکمه تب های انتخاب کننده -->
 					  <div id="tabpane-select-buttons" class="col-lg-3 col-12  d-none d-md-block">
 						<div class="col-megamenu">
 	
-							<ul class="nav flex-column nav-item " id="myTab" role="tablist">
+							<ul class="tab nav flex-column nav-item " id="myTab" role="tablist">
 								<li class="nav-item w-100 " role="presentation">
-								  <button class="nav-link w-100 py-3 d-flex justify-content-between " style="padding: 0 54px;background:rgb(75, 61, 58);border:none;outline: none;color: white;" id="home-tab" data-bs-toggle="tab" data-bs-target="#homeg" type="button" role="tab" aria-controls="home" aria-selected="true"><span>نمای شفاف ساختمانی</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'homeg')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between "  id="home-tab"   type="button" role="tab" aria-controls="home" aria-selected="true"><span>نمای شفاف ساختمانی</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 								<li class="nav-item w-100" role="presentation">
-								  <button class="nav-link w-100 py-3 d-flex justify-content-between"  style="padding: 0 54px;background:rgb(95, 77, 73);border:none;outline: none;color: white;" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><span>پله های ساختمانی</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'profile')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="profile-tab" type="button" role="tab" aria-controls="profile" aria-selected="false"><span>پله های ساختمانی</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 								<li class="nav-item w-100" role="presentation">
-								  <button class="nav-link w-100 py-3 d-flex justify-content-between"  style="padding: 0 54px;background:rgb(148, 120, 115);border:none;outline: none;color: white;" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false"><span>نرده و حفاظ</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'messages')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="messages-tab"  type="button" role="tab" aria-controls="messages" aria-selected="false"><span>نرده و حفاظ</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 								<li class="nav-item w-100" role="presentation">
-								  <button class="nav-link w-100 py-3 d-flex justify-content-between"  style="padding: 0 54px;background:rgb(177, 145, 139);border:none;outline: none;color: white;" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><span>سقف های شفاف</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'settings')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="settings-tab"  type="button" role="tab" aria-controls="settings" aria-selected="false"><span>سقف های شفاف</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 							</ul>
-
 				  
 						</div>
 					  </div>
@@ -132,12 +144,12 @@ referrerpolicy="no-referrer"
 					  <div id="btntabs" class="row col-12 col-lg-8 py-0 py-lg-4">
   
 					  <!-- محتوای سایز کامپیوتر -->
-						  <div class="tab-content d-none d-md-block " style="width: 100%;">
+						  <div class=" d-none d-md-block " style="width: 100%;">
 	  
 
 
 							
-							<div class="tab-pane  fade" id="homeg" role="tabpanel" aria-labelledby="home-tab">
+							<div class="tabcontent" id="homeg" role="tabpanel" aria-labelledby="home-tab">
 							  
 								<div class="row d-flex flex-row-reverse justify-content-between pt-4">
 
@@ -209,45 +221,366 @@ referrerpolicy="no-referrer"
 							
 							</div>
 	  
-							  <div class="tab-pane  fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-							  
-								  <div class="row d-flex flex-row-reverse justify-content-between pt-4">
-  
-									  
-  2
-								  <!-- قرار دادن پیشنهادات -->
-  
-  
-								  </div>
-							  
-							  </div>
+							<div class="tabcontent" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							
+								<div class="row d-flex flex-row-reverse justify-content-between pt-4">
+
+									
+2
+								<!-- قرار دادن پیشنهادات -->
 
 
-							  
-							  
-							  <div class="tab-pane fade dropdown-toggle" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+								</div>
+							
+							</div>
+	  
+							<div class="tabcontent" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+
+								<div class="row d-flex flex-row-reverse justify-content-between pt-4" >
+
+	3
+									<!-- قرار دادن پیشنهادات -->
+		
+		
+								</div>
+	
+							</div>
+	  
+							<div class="tabcontent" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+	
+								<div class="row d-flex flex-row-reverse justify-content-between pt-4" >
+
+4
+									<!-- قرار دادن پیشنهادات -->
+		
+		
+								</div>
+							
+							</div>
+	  
+						  </div>
+
+						  
   
-								  <div class="row d-flex flex-row-reverse justify-content-between pt-4" >
+					  <!-- محتوای سایز موبایل -->
+						  <div class="accordion py-4 d-block d-lg-none" id="accordionExample">
   
-	  3
-									  <!-- قرار دادن پیشنهادات -->
-		  
-		  
+  
+							  <div class="accordion-item">
+							  <p class="accordion-header" id="headingOne">
+								  <button ondblclick="openlinks('www.google.com')"  class=" py-3 w-100 d-flex justify-content-between "  style="padding: 0 20px;border:none;outline: none;color: white;"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								  نمای شفاف ساختمانی
+								  </button>
+							  </p>
+
+
+							  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								  <div class="accordion-body d-flex justify-content-center flex-column p-0" style="overflow: scroll;">
+  
+									  <div class="row accordion col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: left;" >
+   
+  
+										    <div class="card  row d-flex flex-column " style="padding: 10px;">
+											  
+											  <div class="row col-12 accordion-item">
+												  <div class="col-12">
+													  <p class="accordion-header">
+														  <button  class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapseOneA" style="outline: 0;">پله های اول </button>
+													  </p>
+												  </div>
+  
+												  <div class="row accordion-collapse  collapse" style="text-align: right;" id="collapseOneA">
+  
+													  <div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
+														  <img src="img/1.jpg" alt="" class="w-100 h-75 " id="collapseOneA">
+													  </div>
+			  
+													  <div class="card-body col-8 col-lg-8 hide" >
+														  <ul class="text-black list-unstyled">
+														  <li id="products"><a href="#" >پله 1 </a></li>
+														  <li id="products"><a href="#" >پله 2</a></li>
+														  <li id="products"><a href="#" >پله 3</a></li>
+														  <li id="products"><a href="#" >پله 4</a></li>
+														  </ul>
+													  </div>
+  
+												  </div>
+
+											  </div>
+
+											</div>
+  
+
+											<div class="card  row d-flex flex-column " style="padding: 10px;">
+
+											  <div class="row col-12 accordion-item">
+												  <div class="col-12">
+													  <p class="accordion-header">
+														  <button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsetwoA">پله های دوم </button>
+													  </p>
+												  </div>
+  
+												  <div class="row accordion-collapse collapse" style="text-align: right;" id="collapsetwoA">
+  
+													  <div class="col-4 col-lg-4  d-none d-sm-block" id="collapsetwoA" style="padding-top:1.3rem;">
+														  <img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block" >
+													  </div>
+			  
+													  <div class="card-body col-8 col-lg-8 hide" >
+														  <ul class="text-black list-unstyled">
+														  <li id="products"><a href="#" >پله 1 </a></li>
+														  <li id="products"><a href="#" >پله 2</a></li>
+														  <li id="products"><a href="#" >پله 3</a></li>
+														  <li id="products"><a href="#" >پله 4</a></li>
+														  </ul>
+													  </div>
+  
+												  </div>
+											  </div>
+
+										  	</div>
+
+
+											<div class="card accordion row d-flex flex-column " style="padding: 10px;">
+
+												<div class="row col-12">
+													<div class="col-12">
+														<p class="accordion-header">
+															<button class="btn w-100" data-bs-toggle="collapse" data-bs-target="#collapsethreeA">پله های سوم
+														</p>
+													</div>
+
+													<div class="row accordion-collapse collapse" id="collapsethreeA">
+
+														<div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
+															<img src="img/1.jpg" alt="" id="collapsethreeA" class="w-100 h-75  d-lg-block" >
+														</div>
+				
+														<div class="card-body col-8 col-lg-8 hide">
+															<ul class="text-black list-unstyled">
+															<li id="products"><a href="#" >پله 1 </a></li>
+															<li id="products"><a href="#" >پله 2</a></li>
+															<li id="products"><a href="#" >پله 3</a></li>
+															<li id="products"><a href="#" >پله 4</a></li>
+															</ul>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+										  
+									  </div>
+  
+  
 								  </div>
-	  
 							  </div>
-	  
-							  <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-	  
-								  <div class="row d-flex flex-row-reverse justify-content-between pt-4" >
   
-  4
-									  <!-- قرار دادن پیشنهادات -->
-		  
-		  
-								  </div>
-							  
 							  </div>
+  
+  
+							  <div class="accordion-item">
+							  <p class="accordion-header" id="headingTwo">
+								  <button class=" py-3 w-100 d-flex justify-content-between " style="padding: 0 20px;border:none;outline: none;color: white;" class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								  پله های ساختمانی
+								  </button>
+							  </p>
+							  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								  <div class="accordion-body">
+								  2	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
+								  </div>
+							  </div>
+							  </div>
+  
+  
+							  <div class="accordion-item">
+							  <p class="accordion-header" id="headingThree">
+								  <button class=" py-3 w-100 d-flex justify-content-between " style="padding: 0 20px;border:none;outline: none;color: white;" class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+								  نرده و حفاظ
+								  </button>
+							  </p>
+							  <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								  <div class="accordion-body">
+								  3	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
+								  </div>
+							  </div>
+							  </div>
+  
+  
+							  <div class="accordion-item">
+								  <p class="accordion-header" id="headingThree">
+									  <button class=" py-3 w-100 d-flex justify-content-between " style="padding: 0 20px;border:none;outline: none;color: white;" class=" collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								  4	سقف های شفاف
+									  </button>
+								  </p>
+								  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									  <div class="accordion-body">
+  										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores qui tempore corrupti laboriosam velit. Cupiditate non tempore aspernatur repudiandae itaque?
+									  </div>
+								  </div>
+							  </div>
+  
+  
+						  </div>
+  
+					  </div>
+					  <!-- پایان دکمه تب های انتخاب شده -->
+  
+  
+					</div>
+
+				</div>
+
+					
+			</li>
+			<li class="nav-item">
+
+				<a class="nav-link dropdown-toggle toggledrop" id="toggledrop2"  href="#" data-bs-toggle="dropdown">کاتالوگ ها</a>
+				<div class="dropdown-menu megamenu" id="megamenu" role="menu" style="padding: 0 !important;margin: 0 !important; background: transparent;border: none;">
+					
+					<div class="row " id="g3" style="width: 112%;">
+	
+					  <!--شروع دکمه تب های انتخاب کننده -->
+					  <div id="tabpane-select-buttons" class="col-lg-3 col-12  d-none d-md-block">
+						<div class="col-megamenu">
+	
+							<ul class="tab nav flex-column nav-item " id="myTab" role="tablist">
+								<li class="nav-item w-100 " role="presentation">
+									<!-- لطفا آیدی دیگری برای رویداد موس اینتر دکمه (باتن) وارد کنید -->
+								  <button  onmouseenter="openCity(event, 'homeg2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between "  id="home-tab"   type="button" role="tab" aria-controls="home" aria-selected="true"><span>زیرمنوی آزمایشی 1</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								</li>
+								<li class="nav-item w-100" role="presentation">
+								  <button  onmouseenter="openCity(event, 'profile2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="profile-tab" type="button" role="tab" aria-controls="profile" aria-selected="false"><span>زیرمنوی آزمایشی 2</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								</li>
+								<li class="nav-item w-100" role="presentation">
+								  <button  onmouseenter="openCity(event, 'messages2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="messages-tab"  type="button" role="tab" aria-controls="messages" aria-selected="false"><span>زیرمنوی آزمایشی 3</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								</li>
+								<li class="nav-item w-100" role="presentation">
+								  <button  onmouseenter="openCity(event, 'settings2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="settings-tab"  type="button" role="tab" aria-controls="settings" aria-selected="false"><span>زیرمنوی آزمایشی 4</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								</li>
+							</ul>
+				  
+						</div>
+					  </div>
+					  <!-- پایان دکمه تب های انتخاب کننده -->
+  
+  
+	
+					  <!-- شروع دکمه تب های انتخاب شده -->
+					  <div id="btntabs" class="row col-12 col-lg-8 py-0 py-lg-4" style="background: transparent;">
+  
+					  <!-- محتوای سایز کامپیوتر -->
+						  <div class=" d-none d-md-block " style="width: 100%;">
+	  
+
+							<div class="tabcontent" id="homeg2" role="tabpanel" aria-labelledby="home-tab">
+							  
+								<div class="row d-flex flex-row-reverse justify-content-between pt-4">
+
+									
+										
+									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-4">
+											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-md-block">
+										</div>
+										<div class="col-12 col-lg-8">
+										  <h4>پله فلان</h4>
+											<ul class="text-black list-unstyled">
+											<li id="products"><a href="#" >پله 1 </a></li>
+											<li id="products"><a href="#" >پله 2</a></li>
+											<li id="products"><a href="#" >پله 3</a></li>
+											<li id="products"><a href="#" >پله 4</a></li>
+											</ul>
+										</div>
+									</div>
+		
+		
+									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-4">
+											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
+										</div>
+										<div class="col-12 col-lg-8">
+										  <h4>پله فلان</h4>
+											<ul class="text-black list-unstyled">
+											<li id="products"><a href="#" >پله 1 </a></li>
+											<li id="products"><a href="#" >پله 2</a></li>
+											<li id="products"><a href="#" >پله 3</a></li>
+											<li id="products"><a href="#" >پله 4</a></li>
+											</ul>
+										</div>
+									</div>
+		
+		
+									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-4">
+											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
+										</div>
+										<div class="col-12 col-lg-8">
+											<h4>پله فلان</h4>
+											<ul class="text-black list-unstyled">
+											<li id="products"><a href="#" >پله 1 </a></li>
+											<li id="products"><a href="#" >پله 2</a></li>
+											<li id="products"><a href="#" >پله 3</a></li>
+											<li id="products"><a href="#" >پله 4</a></li>
+											</ul>
+										</div>
+									</div>
+		
+									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-4">
+											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
+										</div>
+										<div class="col-12 col-lg-8">
+										  <h4>پله فلان</h4>
+											<ul class="text-black list-unstyled">
+											<li id="products"><a href="#" >پله 1 </a></li>
+											<li id="products"><a href="#" >پله 2</a></li>
+											<li id="products"><a href="#" >پله 3</a></li>
+											<li id="products"><a href="#" >پله 4</a></li>
+											</ul>
+										</div>
+									</div>
+
+								</div>
+							
+							</div>
+	  
+							<div class="tabcontent" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
+							
+								<div class="row d-flex flex-row-reverse justify-content-between pt-4">
+
+									
+2
+								<!-- قرار دادن پیشنهادات -->
+
+
+								</div>
+							
+							</div>
+	  
+							<div class="tabcontent" id="messages2" role="tabpanel" aria-labelledby="messages-tab">
+
+								<div class="row d-flex flex-row-reverse justify-content-between pt-4" >
+
+	3
+									<!-- قرار دادن پیشنهادات -->
+		
+		
+								</div>
+	
+							</div>
+	  
+							<div class="tabcontent" id="settings2" role="tabpanel" aria-labelledby="settings-tab">
+	
+								<div class="row d-flex flex-row-reverse justify-content-between pt-4" >
+
+4
+									<!-- قرار دادن پیشنهادات -->
+		
+		
+								</div>
+							
+							</div>
 	  
 						  </div>
 
@@ -420,12 +753,8 @@ referrerpolicy="no-referrer"
   
 					</div>
 
-					</div>
+				</div>
 
-					
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link " href="#">  کاتالوگ ها  </a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link " href="#"> بلاگ  </a>
@@ -453,15 +782,5 @@ referrerpolicy="no-referrer"
     
   ></script>
 <script src="scripts/script.js"></script>
-  
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"
-  ></script>
+<script src="./scripts/tabpane.js"></script>
 </html>

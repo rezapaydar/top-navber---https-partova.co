@@ -1,42 +1,34 @@
 
 $(document).ready(function(){
-    let toggledrop = document.getElementById('toggledrop');
+    let toggledrop = document.querySelectorAll("a[id*='toggledrop']");
     let megamenu = document.getElementById('megamenu');
     let navlink=document.querySelectorAll('.nav-link');
-    const bool=false;
+    
+    for (let i = 0; i < toggledrop.length; i++) {
+        const element = toggledrop[i];
+        $(element).mouseenter((e)=>{
 
-    $(toggledrop).mouseenter((e)=>{
-
-        $(toggledrop).dropdown('toggle')
-    
-        $('button.nav-link').hover(function(){
-            $(this).tab('show');
-        })
-    
-    
-    
-    })
-    $("#g3").mouseleave((e)=>{
-
-        // const timing = setTimeout(()=>{
-            $(toggledrop).dropdown('toggle')
-            // if($('#tab-content').hover()){
-            //     alert('heyyyyy')
-            //     clearTimeout(timing)
-            // }
-        // },1000)
+            $(element).dropdown('toggle');
+            $('#btntabs').css('display','block');
 
         
-
-        
-    
-        $('button.nav-link').hover(function(){
-            $(this).tab('show');
         })
+        $("#btntabs").mouseleave((e)=>{
+
+            // const timing = setTimeout(()=>{
+                $(element).dropdown('toggle')
+
+                // if($('#tab-content').hover()){
+                //     alert('heyyyyy')
+                //     clearTimeout(timing)
+                // }
+            // },1000)
     
-    مدیر
+        
+        })
+    }
     
-    })
+    
 
     $("#tabpane-select-buttons").mouseenter((e)=>{
 
@@ -49,20 +41,16 @@ $(document).ready(function(){
         }
            
             
-        $('#btntabs').removeClass('bg-transparent');
-        $('##btntabs').addClass('bg-white');
-    
-    })
-    $("#g3").mouseleave((e)=>{
 
-        
     
     })
 
-
- 
     
 })
+
+
+
+
 
 
 // ==========================* function open links on grey menu *=====================================
@@ -131,171 +119,4 @@ document.addEventListener("DOMContentLoaded", function(){
     
 }); 
 
-
-
-
-
-// $(toggledrop).hover('mouseenter',(e)=>{
-
-//     $(toggledrop).dropdown('toggle')
-
-//     $('.nav-link').hover(function(){
-//         $(this).tab('show');
-//     })
-
-//     e.stopPropagation();
-
-
-// })
-
-// toggledrop.addEventListener('mouseleave',(e)=>{
-
-//     $(toggledrop).dropdown('dispose')
-
-//     e.stopPropagation();
-
-//     // $('.nav > .nav-item > button.nav-link').mouseenter(function(){
-//     //     $(this).tab('show');
-//     // })
-
-
-// })
-
-// toggledrop.addEventListener('mouseout',()=>{
-
-//     $(toggledrop).dropdown('toggle')
-
-//     // $('#homeg').mouseleave(function(){
-//     //     $(this).tab('hide');
-//     // })
-//     // $('#profile').mouseleave(function(){
-//     //     $(this).tab('hide');
-//     // })
-//     // $('#messages').mouseleave(function(){
-//     //     $(this).tab('hide');
-//     // })
-//     // $('#settings').mouseleave(function(){
-//     //     $(this).tab('hide');
-
-// })
-// // 
-// toggledrop.addEventListener('',()=>{
-
-// setTimeout(()=>{
-//     $(toggledrop).dropdown('toggle')
-// },3000)
-
-// })
-
-
-// $('.accordion-collapse ')
-
-
-
-    
-
-    
-
-// })
-
-// $(document).ready(function(){
-
-
-//     $('.nav-link').mouseenter(function(){
-//         $(this).tab('show');
-//     })
-
-    
-
-// })
-
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
-
-// $(document).ready(()=>{
-
-//     const objectone = [
-//         {
-//           title: "اولین تایتل",
-//           caption: "لورم ایپسوم وان تو تری فور فایو سیکس",
-//           img: "img/2.jpg",
-//         },
-//         {
-//           title: "دومین تایتل",
-//           caption: "لورم ایپسوم وان تو تری فور فایو سیکس",
-//           img: "img/3.jpg",
-//         },
-//         {
-//           title: "سومین تایتل",
-//           caption: "لورم ایپسوم وان تو تری فور فایو سیکس",
-//           img: "img/4.jpg",
-//         },
-//       ];
-
-//       let carinner = $(".carousel-inner");
-
-//       for (let i in objectone) {
-//         const element = objectone[i];
-
-//         let loop = '';
-
-//         loop += `
-//         <div class="carousel-item active">
-//         <button
-//         type="button"
-//         class="btn"
-
-//       >
-//       <img src="${objectone[i].img}" class="w-50 h-50" alt="First slide" onclick="onclicker(${objectone[i]})">
-//       </button>
-//               <div class="carousel-caption d-none d-md-block">
-//                   <h3>${objectone[i].title}</h3>
-//                   <p>${objectone[i].caption}</p>
-//               </div>
-//           </div>
-//           <div
-//       class="modal fade"
-//       id="exampleModal"
-//       tabindex="-1"
-//       role="dialog"
-//       aria-labelledby="exampleModalLabel"
-//       aria-hidden="true"
-//     >
-//       <div class="modal-dialog" role="document">
-//         <div class="modal-content">
-         
-//           <div class="modal-body">
-//           <img src="${objectone[i].img}" class="w-100 h-100"
-//           </div>
-
-//         </div>
-//       </div>
-//     </div>
-//           `
-
-        
-        
-          
-// console.log(loop);
-//         $('.carousel-inner').append(loop)
-//         // console.log(objectone[i]);
-//       }
-
-//       onclicker(eve){
-//           alert(eve)
-//       }
-
-// })
 

@@ -28,7 +28,7 @@ button,p,span,title,label{
 
   }
   body{
-      background: white;
+      background: yellow;
   }
 
           /*================================ end public styles , please remove its ========================================*/
@@ -70,6 +70,13 @@ button,p,span,title,label{
 #navbar_main > div > ul > li > a,.card-body ul li a{
     color: white !important;
 }
+/* li[role="presentation"] button[aria-selected="true"]{
+    border-radius: 0px;
+    background: #fa1942 !important;
+    box-shadow:  12px 12px 31px #c11333,
+                 -12px -12px 31px #ff1f51;
+                 z-index: 99999999;
+} */
 
         /*================================ end menu ========================================*/
 
@@ -209,6 +216,24 @@ li.products a{
         ul{
             padding-right: 0 !important;
         }
+
+        button[id*='tab']{
+            padding: 100px 54px;
+            background:#eee !important;
+            border:none;
+            outline: none;
+            color:black !important;
+            transition: 0.3s;
+        }
+        button[id*='tab']:hover{
+            border-radius: 0px;
+            color:white !important;
+
+            background: #fa1942 !important;
+            box-shadow:  12px 12px 31px #c11333,
+                         -12px -12px 31px #ff1f51;
+                         z-index: 99999999;
+        }
         
        
 
@@ -309,9 +334,6 @@ li.products a{
             transform: rotate(360deg);
         }
 
-        #navbar-main .nav-link:hover{
-            text-decoration: underline;
-        }
         #toggledrop::after{
             transition: 0.2s;
             transform: rotate(90deg);
@@ -437,6 +459,9 @@ li.products a{
                 }
 
                 /*================================ end media queries ========================================*/
+
+
+        
 
 
         /* #services:hover .megamenu {
