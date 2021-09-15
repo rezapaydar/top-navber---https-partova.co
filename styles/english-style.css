@@ -204,14 +204,14 @@ li.products{
     transition: 0.1 s;
     color:#fa1942 !important;
 }
-#suggest > img{
+/* #suggest > img{
 opacity: .1;
 transition: 0.2;
 }
 
 #suggest:hover #suggest > img{
     opacity: 1;
-}
+} */
 #myTab> li> button{
 transition: 0.3s;
 }
@@ -223,16 +223,7 @@ li.products a{
     text-decoration: none !important;
     color: #403431 !important;
 }
-.suggest img {
-opacity: 0;
-transition:0.5s;
-}
 
-
-
-.suggest:hover img{
-    opacity: 1;
-}
 
 #g3{
     background:white;
@@ -386,5 +377,10 @@ button[id*='tab']:hover{
 
 }
 #btntabs{
-    overflow-y: ;
+    background: rgba( 255, 255, 255, 0.4 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
 }

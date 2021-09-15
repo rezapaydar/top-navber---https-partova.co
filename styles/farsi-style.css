@@ -168,9 +168,6 @@ li.products{
 }
 
 
-#suggest:hover #suggest > img{
-    opacity: 1;
-}
 #myTab> li> button{
 transition: 0.3s;
 }
@@ -184,24 +181,6 @@ li.products a{
     color: #403431;
 }
 
-.suggest img{
-    opacity: 0;
-    transition:0.5s;
-    }
-    
-    .suggest:hover img{
-        opacity: 1;
-    }
-
-    .suggest img{
-        opacity: 0;
-        transition:0.5s;
-        }
-
-        
-        .suggest:hover img{
-            opacity: 1;
-        }
 
         .suggest a{
             text-decoration: 0;
@@ -240,7 +219,11 @@ li.products a{
 
         }
         #btntabs{
-            overflow-y: scroll;
+            background: rgba( 255, 255, 255, 0.4 ) !important;
+            box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
         }
         
        
