@@ -8,26 +8,13 @@
 
 <title>mobile menu and mega menu mix farsi - reza jaberi</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 crossorigin="anonymous"
 ></script>
-<script
-src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-crossorigin="anonymous"
-></script>
-
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
-integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
-crossorigin="anonymous"
-/>
-
 <link
 rel="stylesheet"
 href="path/to/font-awesome/css/font-awesome.min.css"
@@ -67,7 +54,7 @@ referrerpolicy="no-referrer"
 			<div id="contnav" class="d-flex justify-content-between justify-content-md-between  w-100 ro">
 				<ul class="navbar-nav languages d-flex flex-row">
 					<li class="nav-item">
-						<button data-trigger="navbar_main" class="d-lg-none btn btn" type="button"> <i class="fas fa-bars text-white"></i> </button>
+						<button data-trigger="navbar_main" class="d-lg-none btn" type="button" style="background: none;"> <i  class="fas fa-bars text-white bg-transparent"></i> </button>
 					</li>
 					<li class="nav-item p-0 m-0">
 						<a class="nav-link" href="http://farsi-languages">FA</a>
@@ -89,7 +76,7 @@ referrerpolicy="no-referrer"
 						</a>
 					</li>
 				</ul>
-				<div class="logo-cont col-5 col-sm-4 col-lg-3 d-flex d-md-none justify-content-center py-3 p-0 " >
+				<div class="logo-cont col-5 col-sm-4 col-lg-3 d-flex d-lg-none justify-content-center py-3 p-0 " >
 					<img src="./img/Logo_White.png" class="w-100 ">
 				</div>
 			</div>
@@ -98,23 +85,27 @@ referrerpolicy="no-referrer"
 	  <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark ">
       
 		<div class="container-fluid">
+
+			  <button type="button" class="float-left close offcanvas-header btn-close" aria-label="Close">
+				<span aria-hidden="true" style="font-size: 25px; ">&times;</span>
+			  </button>
   
-		   <div class="offcanvas-header">  
+		   <!-- <div class="offcanvas-header">  
 		   <button class="btn-close float-end"></button>
-		   </div>
+		   </div> -->
 		   
 	   
 		   <ul class="navbar-nav" id="navbar-main" >
-			<li class="nav-item active"> <a class="nav-link" href="#">درباره ما </a> </li>
+			<li class="nav-item active"> <a class="nav-link" onclick="openlinks('www.website.com')" href="www.website.com">درباره ما </a> </li>
 			<li class="nav-item"><a class="nav-link" href="#"> پروژه ها </a></li>
 			<li class="nav-item" id="services"> 
 				<a class="nav-link dropdown-toggle toggledrop" id="toggledrop1"  href="#" data-bs-toggle="dropdown">حوزه های فعالیت</a>
-				<div class="dropdown-menu megamenu" id="megamenu" role="menu" style="padding: 0 !important;margin: 0 !important;background: transparent;">
+				<div class="dropdown-menu megamenu border-0" id="megamenu" role="menu" style="padding: 0 !important;margin: 0 !important;background: transparent;">
 					
-					<div class="row  " id="g3" style="width: 112%;" style="background: none;">
+					<div class="row  " id="g3" style="width: 100%;" >
 	
 					  <!--شروع دکمه تب های انتخاب کننده -->
-					  <div id="tabpane-select-buttons" class="col-lg-3 col-12  d-none d-md-block">
+					  <div id="tabpane-select-buttons" class="p-0 col-lg-3 col-12  d-none d-lg-block" style="background: white;">
 						<div class="col-megamenu">
 	
 							<ul class="tab nav flex-column nav-item" id="myTab" role="tablist">
@@ -139,17 +130,16 @@ referrerpolicy="no-referrer"
   
 	
 					  <!-- شروع دکمه تب های انتخاب شده -->
-					  <div id="btntabs" class="row col-12 col-lg-8 py-0 py-lg-4">
+					  <div id="btntabs" class="row col-12 col-lg-8 py-0 py-lg-4 p-0">
   
 					  <!-- محتوای سایز کامپیوتر -->
-						  <div class=" d-none d-md-block " style="width: 100%;">
+						  <div class=" d-none d-lg-block " style="width: 150% !important;">
 							
 							<div class="tabcontent" id="homeg" role="tabpanel" aria-labelledby="home-tab">
 							  
-								<div class="row d-flex flex-row justify-content-between pt-4">
+								<div class="row  pt-2">
 
-									
-										
+
 									<!-- <div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
 										<div class="col-12 col-lg-4">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-md-block">
@@ -166,14 +156,14 @@ referrerpolicy="no-referrer"
 									</div> -->
 		
 		
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
-										<div class="col-12 col-lg-4">
+									<div class=" col-12 col-lg-5 m-4 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-5">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
 										</div>
-										<div class="col-12 col-lg-8">
+										<div class="col-12 col-lg-7">
 										  <h4>پله فلان</h4>
 											<ul class="text-black list-unstyled">
-											<li id="products"><a href="#" >پله 1 </a></li>
+											<li id="products"><a onclick=`openlinks('https://www.google.com/')` href="https://www.google.com/" >پله 1 </a></li>
 											<li id="products"><a href="#" >پله 2</a></li>
 											<li id="products"><a href="#" >پله 3</a></li>
 											<li id="products"><a href="#" >پله 4</a></li>
@@ -182,14 +172,14 @@ referrerpolicy="no-referrer"
 									</div>
 		
 		
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
-										<div class="col-12 col-lg-4">
+									<div class="col-12 col-lg-5 m-4 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-5">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
 										</div>
-										<div class="col-12 col-lg-8">
+										<div class="col-12 col-lg-7">
 											<h4>پله فلان</h4>
 											<ul class="text-black list-unstyled">
-											<li id="products"><a href="#" >پله 1 </a></li>
+											<li id="products"><a href="https://www.google.com/" >پله 1 </a></li>
 											<li id="products"><a href="#" >پله 2</a></li>
 											<li id="products"><a href="#" >پله 3</a></li>
 											<li id="products"><a href="#" >پله 4</a></li>
@@ -197,14 +187,14 @@ referrerpolicy="no-referrer"
 										</div>
 									</div>
 		
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
-										<div class="col-12 col-lg-4">
+									<div class=" col-12 col-lg-5 m-4 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-5">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
 										</div>
-										<div class="col-12 col-lg-8">
+										<div class="col-12 col-lg-7">
 										  <h4>پله فلان</h4>
 											<ul class="text-black list-unstyled">
-											<li id="products"><a href="#" >پله 1 </a></li>
+											<li id="products"><a href="https://www.google.com/" >پله 1 </a></li>
 											<li id="products"><a href="#" >پله 2</a></li>
 											<li id="products"><a href="#" >پله 3</a></li>
 											<li id="products"><a href="#" >پله 4</a></li>
@@ -218,7 +208,7 @@ referrerpolicy="no-referrer"
 	  
 							<div class="tabcontent" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 							
-								<div class="row d-flex flex-row-reverse justify-content-between pt-4">
+								<div class="row pt-4">
 
 									
 2
@@ -256,7 +246,7 @@ referrerpolicy="no-referrer"
 						  </div>
 
 						  <!-- محتوای سایز موبایل -->
-						<div class="accordion py-4 d-block d-lg-none" id="accordionExample">
+						<div class="accordion w-100 py-4 d-block d-lg-none" id="accordionExample">
 						
 						
 							<div class="accordion-item">
@@ -273,7 +263,7 @@ referrerpolicy="no-referrer"
 									<div class="row accordion col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: left;" >
 
 
-										<div class="card  row d-flex flex-column " style="padding: 10px;">
+										<div class="card col-12 row  d-flex flex-column " style="padding: 10px;">
 											
 											<div class="row col-12 accordion-item">
 												<div class="col-12">
@@ -284,11 +274,11 @@ referrerpolicy="no-referrer"
 
 												<div class="row accordion-collapse  collapse" style="text-align: right;" id="collapseOneA">
 
-													<div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
+													<!-- <div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
 														<img src="img/1.jpg" alt="" class="w-100 h-75 " id="collapseOneA">
-													</div>
+													</div> -->
 
-													<div class="card-body col-8 col-lg-8 hide" >
+													<div class="card-body col-12 col-lg-8 hide" >
 														<ul class="text-black list-unstyled">
 														<li id="products"><a href="#" >پله 1 </a></li>
 														<li id="products"><a href="#" >پله 2</a></li>
@@ -304,7 +294,7 @@ referrerpolicy="no-referrer"
 										</div>
 
 
-										<div class="card  row d-flex flex-column " style="padding: 10px;">
+										<div class="card col-12 row d-flex flex-column " style="padding: 10px;">
 
 											<div class="row col-12 accordion-item">
 												<div class="col-12">
@@ -315,11 +305,11 @@ referrerpolicy="no-referrer"
 
 												<div class="row accordion-collapse collapse" style="text-align: right;" id="collapsetwoA">
 
-													<div class="col-4 col-lg-4  d-none d-sm-block" id="collapsetwoA" style="padding-top:1.3rem;">
+													<!-- <div class="col-4 col-lg-4  d-none d-sm-block" id="collapsetwoA" style="padding-top:1.3rem;">
 														<img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block" >
-													</div>
+													</div> -->
 
-													<div class="card-body col-8 col-lg-8 hide" >
+													<div class="card-body col-12 col-lg-8 hide" >
 														<ul class="text-black list-unstyled">
 														<li id="products"><a href="#" >پله 1 </a></li>
 														<li id="products"><a href="#" >پله 2</a></li>
@@ -331,10 +321,10 @@ referrerpolicy="no-referrer"
 												</div>
 											</div>
 
-											</div>
+										</div>
 
 
-										<div class="card accordion row d-flex flex-column " style="padding: 10px;">
+										<div class="card col-12 accordion row d-flex flex-column " style="padding: 10px;">
 
 											<div class="row col-12">
 												<div class="col-12">
@@ -345,11 +335,11 @@ referrerpolicy="no-referrer"
 
 												<div class="row accordion-collapse collapse" id="collapsethreeA">
 
-													<div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
+													<!-- <div class="col-4 col-lg-4 d-none d-sm-block"  style="padding-top:1.3rem;">
 														<img src="img/1.jpg" alt="" id="collapsethreeA" class="w-100 h-75  d-lg-block" >
-													</div>
+													</div> -->
 
-													<div class="card-body col-8 col-lg-8 hide">
+													<div class="card-body col-12 col-lg-8 hide">
 														<ul class="text-black list-unstyled">
 														<li id="products"><a href="#" >پله 1 </a></li>
 														<li id="products"><a href="#" >پله 2</a></li>
@@ -419,37 +409,36 @@ referrerpolicy="no-referrer"
 					  </div>
 					  <!-- پایان دکمه تب های انتخاب شده -->
   
-  
 					</div>
 
 				</div>
 
 					
 			</li>
-			<li class="nav-item">
 
+			<li class="nav-item">
 				<a class="nav-link dropdown-toggle toggledrop" id="toggledrop2"  href="#" data-bs-toggle="dropdown">کاتالوگ ها</a>
-				<div class="dropdown-menu megamenu" id="megamenu" role="menu" style="padding: 0 !important;margin: 0 !important; background: transparent;border: none;">
+				<div class="dropdown-menu megamenu border-0" id="megamenu" role="menu" style="padding: 0 !important;margin: 0 !important;border: none;background: transparent;">
 					
-					<div class="row " id="g3" style="width: 112%;">
+					<div class="row w-100" id="g3" >
 	
 					  <!--شروع دکمه تب های انتخاب کننده -->
-					  <div id="tabpane-select-buttons" class="col-lg-3 col-12  d-none d-md-block">
+					  <div id="tabpane-select-buttons" class="col-lg-3 col-12  d-none d-md-block p-0" style="background: white;">
 						<div class="col-megamenu">
 	
 							<ul class="tab nav flex-column nav-item " id="myTab" role="tablist">
 								<li class="nav-item w-100 " role="presentation">
 									<!-- لطفا آیدی دیگری برای رویداد موس اینتر دکمه (باتن) وارد کنید -->
-								  <button  onmouseenter="openCity(event, 'homeg2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between "  id="home-tab"   type="button" role="tab" aria-controls="home" aria-selected="true"><span>زیرمنوی آزمایشی 1</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'homeg2')" class="nav-link tablinks w-100 py-3 d-flex flex-row justify-content-between "  id="home-tab"   type="button" role="tab" aria-controls="home" aria-selected="true"><span>زیرمنوی آزمایشی 1</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 								<li class="nav-item w-100" role="presentation">
-								  <button  onmouseenter="openCity(event, 'profile2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="profile-tab" type="button" role="tab" aria-controls="profile" aria-selected="false"><span>زیرمنوی آزمایشی 2</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'profile2')" class="nav-link tablinks w-100 py-3 d-flex flex-row justify-content-between"   id="profile-tab" type="button" role="tab" aria-controls="profile" aria-selected="false"><span>زیرمنوی آزمایشی 2</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 								<li class="nav-item w-100" role="presentation">
-								  <button  onmouseenter="openCity(event, 'messages2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="messages-tab"  type="button" role="tab" aria-controls="messages" aria-selected="false"><span>زیرمنوی آزمایشی 3</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'messages2')" class="nav-link tablinks w-100 py-3 d-flex flex-row justify-content-between"   id="messages-tab"  type="button" role="tab" aria-controls="messages" aria-selected="false"><span>زیرمنوی آزمایشی 3</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 								<li class="nav-item w-100" role="presentation">
-								  <button  onmouseenter="openCity(event, 'settings2')" class="nav-link tablinks w-100 py-3 d-flex justify-content-between"   id="settings-tab"  type="button" role="tab" aria-controls="settings" aria-selected="false"><span>زیرمنوی آزمایشی 4</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
+								  <button  onmouseenter="openCity(event, 'settings2')" class="nav-link tablinks w-100 py-3 d-flex flex-row justify-content-between"   id="settings-tab"  type="button" role="tab" aria-controls="settings" aria-selected="false"><span>زیرمنوی آزمایشی 4</span> <i class="fa fa-angle-left" aria-hidden="true" ></i></button>
 								</li>
 							</ul>
 				  
@@ -460,22 +449,22 @@ referrerpolicy="no-referrer"
   
 	
 					  <!-- شروع دکمه تب های انتخاب شده -->
-					  <div id="btntabs" class="row col-12 col-lg-8 py-0 py-lg-4" style="background: transparent;">
+					  <div id="btntabs" class="row col-12 col-lg-8 p-0 py-0 py-lg-4" >
   
 					    <!-- محتوای سایز کامپیوتر -->
 						<div class=" d-none d-md-block " style="width: 100%;">
 
 							<div class="tabcontent" id="homeg2" role="tabpanel" aria-labelledby="home-tab">
 							  
-								<div class="row d-flex flex-row-reverse justify-content-between pt-4">
+								<div class="row pt-2">
 
 									
 										
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
-										<div class="col-12 col-lg-4">
+									<div class="row col-12 col-lg-5 m-4 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-5">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-md-block">
 										</div>
-										<div class="col-12 col-lg-8">
+										<div class="col-12 col-lg-7">
 										  <h4>پله فلان</h4>
 											<ul class="text-black list-unstyled">
 											<li id="products"><a href="#" >پله 1 </a></li>
@@ -487,11 +476,11 @@ referrerpolicy="no-referrer"
 									</div>
 		
 		
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
-										<div class="col-12 col-lg-4">
+									<div class="row col-12 col-lg-5 m-4 suggest " style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-5">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
 										</div>
-										<div class="col-12 col-lg-8">
+										<div class="col-12 col-lg-7">
 										  <h4>پله فلان</h4>
 											<ul class="text-black list-unstyled">
 											<li id="products"><a href="#" >پله 1 </a></li>
@@ -503,11 +492,11 @@ referrerpolicy="no-referrer"
 									</div>
 		
 		
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
-										<div class="col-12 col-lg-4">
+									<div class="row col-12 col-lg-5 m-4 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-5">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
 										</div>
-										<div class="col-12 col-lg-8">
+										<div class="col-12 col-lg-7">
 											<h4>پله فلان</h4>
 											<ul class="text-black list-unstyled">
 											<li id="products"><a href="#" >پله 1 </a></li>
@@ -518,11 +507,11 @@ referrerpolicy="no-referrer"
 										</div>
 									</div>
 		
-									<div class="row col-12 col-lg-6 mt-4 ml-lg-5 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
-										<div class="col-12 col-lg-4">
+									<div class="row col-12 col-lg-5 m-4 suggest" style="display: flex;flex-direction: row-reverse;text-align: right;" >
+										<div class="col-12 col-lg-5">
 											<img src="img/1.jpg" alt="" class="w-100 h-100 d-none d-lg-block">
 										</div>
-										<div class="col-12 col-lg-8">
+										<div class="col-12 col-lg-7">
 										  <h4>پله فلان</h4>
 											<ul class="text-black list-unstyled">
 											<li id="products"><a href="#" >پله 1 </a></li>
@@ -578,7 +567,7 @@ referrerpolicy="no-referrer"
 
 						  
 						<!-- محتوای سایز موبایل -->
-						<div class="accordion py-4 d-block d-lg-none" id="accordionExample">
+						<div class="accordion w-100 py-4 d-block d-lg-none" id="accordionExample">
 						
 						
 							<div class="accordion-item">
@@ -610,8 +599,8 @@ referrerpolicy="no-referrer"
 														<img src="img/1.jpg" alt="" class="w-100 h-75 " id="collapseOneA">
 													</div>
 
-													<div class="card-body col-8 col-lg-8 hide" >
-														<ul class="text-black list-unstyled">
+													<div class="card-body col-12 col-lg-8 " >
+														<ul class="text-black  list-unstyled">
 														<li id="products"><a href="#" >پله 1 </a></li>
 														<li id="products"><a href="#" >پله 2</a></li>
 														<li id="products"><a href="#" >پله 3</a></li>
@@ -641,7 +630,7 @@ referrerpolicy="no-referrer"
 														<img src="img/1.jpg" alt="" class="w-100 h-75  d-lg-block" >
 													</div>
 
-													<div class="card-body col-8 col-lg-8 hide" >
+													<div class="card-body col-12 col-lg-8 hide" >
 														<ul class="text-black list-unstyled">
 														<li id="products"><a href="#" >پله 1 </a></li>
 														<li id="products"><a href="#" >پله 2</a></li>
@@ -653,10 +642,10 @@ referrerpolicy="no-referrer"
 												</div>
 											</div>
 
-											</div>
+										</div>
 
 
-										<div class="card accordion row d-flex flex-column " style="padding: 10px;">
+									<div class="card accordion row d-flex flex-column " style="padding: 10px;">
 
 											<div class="row col-12">
 												<div class="col-12">
@@ -671,7 +660,7 @@ referrerpolicy="no-referrer"
 														<img src="img/1.jpg" alt="" id="collapsethreeA" class="w-100 h-75  d-lg-block" >
 													</div>
 
-													<div class="card-body col-8 col-lg-8 hide">
+													<div class="card-body col-12 col-lg-8 hide">
 														<ul class="text-black list-unstyled">
 														<li id="products"><a href="#" >پله 1 </a></li>
 														<li id="products"><a href="#" >پله 2</a></li>

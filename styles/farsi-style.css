@@ -80,6 +80,11 @@ button,p,span,title,label{
                  z-index: 99999999;
 } */
 
+#tabpane-select-buttons{
+    border-left:1px solid black;
+    margin-left: 15px;
+}
+
         /*================================ end menu ========================================*/
 
 
@@ -192,6 +197,7 @@ li.products a{
         
         #g3{
             background:transparent;
+            margin: 0 45px;
         }
 
         ul{
@@ -200,8 +206,7 @@ li.products a{
 
         button[id*='tab']{
             padding: 20px 54px !important;
-            background:#eee !important;
-            box-shadow:  20px 20px 60px #bebebe;
+            background:#eeeeee !important;
             border:none;
             outline: none;
             color:black !important;
@@ -219,13 +224,13 @@ li.products a{
 
         }
         #btntabs{
-            background: rgba( 255, 255, 255, 0.4 ) !important;
-            box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
-            backdrop-filter: blur( 4px );
-            -webkit-backdrop-filter: blur( 4px );
+            background: rgba(219, 219, 219, 0.8) !important;
+            /* box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 ) !important; */
+            /* backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px ); */
             border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
         }
-        
+         
        
 
 
@@ -411,12 +416,19 @@ li.products a{
                         
                 }
         
-         @media all and (max-width:400px) {
+                @media all and (max-width:400px) {
                    
                     li.products{
                         width: 150%;
                         text-align: center;
                         transition: 0.3s;
+                    }
+
+                    .accordion > * {
+                        font-size: 70%;
+                    }
+                    #btntabs{
+                        padding: 0 !important;
                     }
                         
                 }

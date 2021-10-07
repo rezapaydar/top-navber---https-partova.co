@@ -226,7 +226,8 @@ li.products a{
 
 
 #g3{
-    background:white;
+        background:transparent;
+        margin: 0 45px;
 }
 
 @media all and (max-width:800px) {
@@ -237,6 +238,13 @@ li.products a{
     .suggest img{
         opacity: 1;
         transition:0.5s;
+        }
+    #btntabs{
+            background: none !important;
+            /* box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 ) !important; */
+            /* backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px ); */
+            border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
         }
         
         
@@ -357,8 +365,8 @@ li.products a{
 
 button[id*='tab']{
     padding: 20px 54px !important;
-    box-shadow:  20px 20px 60px #bebebe;
-    background:#eee !important;
+    /* box-shadow:  20px 20px 60px #bebebe;
+    background:#eee !important; */
     border:none;
     outline: none;
     color:black !important;
@@ -377,10 +385,16 @@ button[id*='tab']:hover{
 
 }
 #btntabs{
-    background: rgba( 255, 255, 255, 0.4 ) !important;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
+    background: rgba(219, 219, 219, 0.8) !important;
+    /* box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 ) !important; */
+    /* backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px ); */
     border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
+}
+
+#tabpane-select-buttons{
+    background: white;
+    border-right:1px solid black;
+    margin-right: 15px;
+    padding: 0;
 }
